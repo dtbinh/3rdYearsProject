@@ -1,0 +1,46 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: 3.60.00.00
+## FORMAT:  v2.00.01
+## DEVICE:  PIC24FJ48GA002
+
+## PINREGACTIONS
+cyc
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+&
+--
+COND1
+Any
+
+
+
+
+
+
+--
+&
+## CLOCK
+
+IC2
+Always
+Never
+High
+700
+300
+
+--
+&
+## STIMULUSFILE
+&
+## RESPONSEFILE
+&
+## ASYNCH
+&
+## ADVANCEDSCL
+
+1
+&

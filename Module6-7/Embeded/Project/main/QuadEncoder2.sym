@@ -1,0 +1,161 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @ADDFF.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W2  @MULS4848.P3
+W0 -W1  @DIVFF.P4
+W0 -W3  @SI64TOF48.P5
+W0 -W1  @DIV3232B.P6
+W0 -W2  @DIVS4848.P7
+W0 -W1  @MUL3232.P8
+W0 -W3  @MULS6464.P9
+W0 -W2  @ADDFF48.P10
+W0      @delay_us1.P11
+W0 -W1  @MULS3232.P12
+W0 -W3  @I64TOF64.P13
+W0 -W1  @MULFF.P14
+W0 -W1  @FTOSD.P15
+W0 -W1  @DIVS3232A.P16
+W0 -W3  @DIVS6464.P17
+W0 -W1  @DIV3232A.P18
+W0 -W3  @SI64TOF64.P19
+W0 -W1  @SDTOF.P20
+W0 -W3  @DIVFF64.P21
+W0 -W2  @DIVFF48.P22
+W0      @SITOF.P23
+W0      @delay_ms1.P24
+W0 -W2  @MULFF48.P25
+W0 -W3  @MULFF64.P26
+W0 -W3  @F64TOI64.P27
+W0 -W3  @ADDFF64.P28
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2 -W3  @MULFF.P1
+W2      @READ_PACKED_MEMORY.P2
+W2 -W3  @DIVFF.P3
+W2      @READ_ROM_MEMORY.P4
+W2 -W3  @DIV3232A.P5
+W2      @WRITE_PACKED_MEMORY.P6
+W2 -W3  @DIV3232B.P7
+W2 -W3  @ADDFF.P8
+W2 -W3  @MUL3232.P9
+W2 -W3  @MULS3232.P10
+W2 -W3  @DIVS3232A.P11
+W3 -W5  @DIVS4848.P1
+W3 -W5  @ADDFF48.P2
+W3      @READ_PACKED_MEMORY.P3
+W3 -W5  @MULFF48.P4
+W3      @READ_ROM_MEMORY.P5
+W3 -W5  @DIVFF48.P6
+W3      @WRITE_PACKED_MEMORY.P7
+W3 -W5  @MULS4848.P8
+W4 -W7  @DIVFF64.P1
+W4 -W7  @DIVS6464.P2
+W4 -W7  @ADDFF64.P3
+W4 -W7  @MULFF64.P4
+W4 -W7  @MULS6464.P5
+085.4   TX1IF
+630.6   C1OUT
+630.7   C2OUT
+800-801 strtok.save
+802-805 _Randseed
+806-807 __DYNAMIC_HEAD
+808-809 ReadPortA
+80A-80B ReadPortB
+80C     Rotate
+80D     RotateX
+80E     RotateY
+80F     Axis
+810-811 Tmr3IntrCounter
+812-813 Sampling
+814-817 r
+818-819 duty_X
+81A-81B duty_Y
+81C     state
+81D     index
+81E-821 average_u
+822-82D Array_u
+82E-851 PIDparameter_X
+852-875 PIDparameter_Y
+876-8A1 EN_X
+8A2-8CD EN_Y
+8CE     Position_control.Axis
+8D0-8D3 Position_control.target
+8D4-8D7 Position_control.PulseCounter
+8E4     control_PID.Axis
+8E6-8E9 control_PID.y
+8EA-8ED control_PID.r
+8EE-8EF control_PID.par
+90E     motor_drive.Axis
+90F     motor_drive.Rotate
+910-913 motor_drive.u
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  Timer4ISR
+000F36  Timer5ISR
+001070  @MUL3232
+0010A0  @I64TOF64
+001104  @DIVFF64
+00120C  @F64TOI64
+001262  @ADDFF
+00140C  @SDTOF
+00145A  @MULFF
+00151E  @FTOSD
+00155E  motor_drive
+001606  control_PID
+0017E4  Position_control
+0018A6  Timer3ISR
+001998  DisableIntr
+0019A2  GlobalVarInit
+001A06  HardwareInit
+001AA6  EnableIntr
+001AAE  @cinit1
+001AAE  main
+001AF2  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\chin\mine BCH project\Module6-7\Embeded\Project\main\
+
+Project Files:
+    QuadEncoder2.c                                          [03-Nov-17 17:51  CRC=C03B8DC4]
+    QuadEncoder.h                                           [03-Nov-17 17:11  CRC=05C6FF8B]
+    CONFIG_PIC24.H                                          [02-Nov-17 20:26  CRC=E70AB7EB]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.H       [12-Nov-13 14:36  CRC=2B092578]
+    C:\Program Files (x86)\PICC\drivers\stdlib.h            [08-Jun-11 14:39  CRC=0B6669CF]
+    C:\Program Files (x86)\PICC\drivers\stddef.h            [16-Jul-10 09:27  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\drivers\string.h            [14-Jul-11 10:13  CRC=23EDEC8F]
+    C:\Program Files (x86)\PICC\drivers\ctype.h             [03-Jan-08 13:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\drivers\stdio.h             [31-Jul-07 13:24  CRC=4E4534F4]
+    C:\Program Files (x86)\PICC\drivers\stdlibm.h           [24-Feb-12 09:58  CRC=9523303D]
+    C:\Program Files (x86)\PICC\drivers\memmgmt.c           [24-Feb-12 09:47  CRC=E82E24A3]
+    C:\Program Files (x86)\PICC\drivers\stdint.h            [30-Dec-08 09:01  CRC=9F7F640F]
+    BL_support.h                                            [05-Jan-17 12:12  CRC=F46A39C9]
+    CDATPIC24.H                                             [25-Jul-17 17:34  CRC=DDB9FE05]
+
+Source signature=D8FAD2D1
+
+Units:
+    QuadEncoder2 (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Case Sensitive: Yes
+
+Output Files:
+    Errors:      QuadEncoder2.err
+    INHX8:       QuadEncoder2.hex
+    Symbols:     QuadEncoder2.sym
+    List:        QuadEncoder2.lst
+    Debug/COFF:  QuadEncoder2.cof
+    Project:     QuadEncoder2.ccspjt
+    Call Tree:   QuadEncoder2.tre
+    Statistics:  QuadEncoder2.STA

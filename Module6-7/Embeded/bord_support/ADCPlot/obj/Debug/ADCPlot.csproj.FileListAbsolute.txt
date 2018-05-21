@@ -1,0 +1,8 @@
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\bin\Debug\ADCPlot.exe.config
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\bin\Debug\ADCPlot.exe
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\bin\Debug\ADCPlot.pdb
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\obj\Debug\ADCPlot.Form1.resources
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\obj\Debug\ADCPlot.Properties.Resources.resources
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\obj\Debug\ADCPlot.csproj.GenerateResource.Cache
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\obj\Debug\ADCPlot.exe
+D:\Lec\Fibo\Bootloader4CCS\ADCPlot\obj\Debug\ADCPlot.pdb

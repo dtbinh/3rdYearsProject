@@ -1,0 +1,83 @@
+
+ROM used:   2476/33788 (7%)
+            2476/33788 (7%) including unused fragments
+
+            0.5 Average locations per line
+            2.6 Average locations per statement
+
+RAM used:   331/8192 (4%) at main() level
+            441/8192 (5%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  451   160  17  EVENT_DRIVEN_CCS.c
+  273     0   0  EVENT_DRIVEN_CCS.h
+  102     0   0  CONFIG_PIC24.h
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  55  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  14  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   1  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   37     0   0  CDATPIC24.h
+  108     0   0  EVENT_TYPE_CCS.h
+  331   116  12  PIC24_UART_INTERRUPT_01.c
+   88     0   0  PIC24_UART_INTERRUPT_01.h
+----- -----
+ 4691   947 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     34   1    8   129  4.6  strlen
+0     36   1    9   150  3.6  create_node
+0     16   0    7    60  3.1  update_node
+0     52   1    7   180  4.5  insert_node_after
+0     46   1    7   192  3.8  remove_node
+0    126   3   13   705  9.2  traverse
+0    178   4   13   919 12.3  malloc
+0     66   1    9   380  6.3  free
+0     62   1    9   206  3.2  QPtrXInit
+0    106   2   11   382  5.6  QPtrXPut
+0    106   2   13   408  6.4  QPtrXGet
+0     62   1    9   206  3.2  Q8UXInit
+0    108   2   12   382  5.6  Q8UXPut
+0    100   2   13   384  5.9  Q8UXGet
+0     16   0    5    35  2.4  Q8UXCount
+0     10   0    0    21  0.9  DisableIntr
+0      8   0    0    21  0.9  EnableIntr
+0    310   6    2   478  6.1  main
+0     24   0    3    76  1.6  HardwareInit
+0     22   0    0   209  2.3  GlobalVarInit
+0     44   1    0   204  4.8  DynamicMemInit
+0     34   1    0    88  2.4  UARTQueueInit
+0    102   2   10   614  8.1  SendTx1
+0    228   5    6  1500 11.5  RDA1
+0     68   1    2   197  4.4  TBE1ISR
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              947
+    Comments                334
+    Volume (V)              14320
+    Difficulty (D)          124.1
+    Effort to implement (E) 1777290
+    Time to implement (T)   27 hours, 26 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   37
+    Maintainability (MI)    50
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-083FA  1964  31312  
+
+
+

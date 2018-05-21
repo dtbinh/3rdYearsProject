@@ -1,0 +1,29 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\BITWISE_LIB.o
+Folder=Intermediary
+[File001]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\PIC24_FREQ_COUNTER_01.o
+Folder=Intermediary
+[File002]
+Location=BITWISE_LIB.ERR
+Folder=Output
+[File003]
+Location=PIC24_FREQ_COUNTER_01.ERR
+Folder=Output
+[File004]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\Frequenct_counter.COF
+Folder=Output
+[File005]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\Frequenct_counter.HEX
+Folder=Output
+[File006]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\Frequenct_counter.LST
+Folder=Output
+[File007]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\Frequenct_counter.ERR
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

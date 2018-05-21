@@ -1,0 +1,18 @@
+[PROJECT]
+Target=ADC.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=ADC.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[ADC.c]
+Type=4
+[mru-list]
+1=ADC.c
+[Units]
+Count=2
+1=PIC24_ADC_01
+2=MOVING_AVG_LIB
+Link=1

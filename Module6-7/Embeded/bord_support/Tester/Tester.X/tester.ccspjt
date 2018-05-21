@@ -1,0 +1,16 @@
+[PROJECT]
+Target=build\default\production\tester.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=build\default\production\tester.c
+[Directories]
+Include=D:\Program Files (x86)\PICC\devices\;D:\Program Files (x86)\PICC\drivers\
+[build\default\production\tester.c]
+Type=4
+[mru-list]
+1=build\default\production\tester.c
+[Units]
+Count=1
+1=tester (main)

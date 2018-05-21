@@ -1,0 +1,6 @@
+ÀÄPIC24_PWM_01
+   ÃÄmain  0/98  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÀÄHardwareInit  0/76  Ram=3
+   ÃÄTmr3ISR  0/34  Ram=0
+   ÀÄTmr5ISR  0/48  Ram=0

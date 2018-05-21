@@ -1,0 +1,38 @@
+ÀÄTester
+   ÃÄMAIN  0/632  Ram=21
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄSystem_Init  0/166  Ram=5
+   ³  ³  ÃÄ@delay_ms1  0/16  Ram=2
+   ³  ³  ÃÄ@const1164  0/30  Ram=0
+   ³  ³  ÀÄBeep  0/6  Ram=0
+   ³  ³     ÀÄBeep_Start  0/54  Ram=2
+   ³  ³        ÀÄBeep_Update  0/48  Ram=3
+   ³  ÃÄLED_Write  0/74  Ram=1
+   ³  ÃÄADC_Read  0/34  Ram=4
+   ³  ÃÄADC_Read  0/34  Ram=4
+   ³  ÃÄADC_Read  0/34  Ram=4
+   ³  ÃÄADC_Read  0/34  Ram=4
+   ³  ÃÄ@PRINTFD16_9600_5725_5724  0/246  Ram=0
+   ³  ÃÄ@PRINTFD16_9600_5725_5724  0/246  Ram=0
+   ³  ÃÄ@PRINTFD16_9600_5725_5724  0/246  Ram=0
+   ³  ÃÄ@PRINTFD16_9600_5725_5724  0/246  Ram=0
+   ³  ÃÄPSW_Check  0/20  Ram=2
+   ³  ÃÄPSW_GetId  0/16  Ram=1
+   ³  ÃÄBeep_SetTone  0/20  Ram=1
+   ³  ÃÄBeep  0/6  Ram=0
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PRINTFD16_9600_5725_5724  0/246  Ram=0
+   ³  ÃÄU1QGet  0/54  Ram=4
+   ³  ÃÄ@const1206  0/28  Ram=0
+   ³  ÃÄBeep_SetTone  0/20  Ram=1
+   ³  ÃÄBeep  0/6  Ram=0
+   ³  ³  ÀÄ*
+   ³  ÃÄData_Processing  0/134  Ram=4
+   ³  ÃÄatoi  0/412  Ram=15
+   ³  ÃÄ@const1208  0/24  Ram=0
+   ³  ÀÄ@PRINTFU16_9600_5725_5724  0/178  Ram=0
+   ÃÄTIMER1_ISR  0/48  Ram=0
+   ³  ÃÄBeep_Service  0/36  Ram=2
+   ³  ÃÄSwitch_Service  0/196  Ram=3
+   ³  ÀÄADC_Service  0/52  Ram=5
+   ÀÄUART1_Isr  0/76  Ram=6

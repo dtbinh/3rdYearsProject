@@ -1,0 +1,10 @@
+ÀÄTest_01
+   ÃÄmain  0/112  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÀÄHardwareInit  0/46  Ram=3
+   ÃÄIntr1ISR  0/40  Ram=0
+   ³  ÃÄTimer1  0/18  Ram=0
+   ³  ÀÄPWM  0/62  Ram=0
+   ÃÄIntr2ISR  0/60  Ram=0
+   ³  ÀÄTimer1  0/18  Ram=0
+   ÀÄTmr1ISR  0/34  Ram=0

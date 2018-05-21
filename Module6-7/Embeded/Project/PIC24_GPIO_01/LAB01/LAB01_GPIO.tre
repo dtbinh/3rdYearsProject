@@ -1,0 +1,5 @@
+ÀÄLAB01_GPIO
+   ÀÄmain  0/168  Ram=6
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄHardwareInit  0/32  Ram=3
+      ÀÄ@delay_ms1  0/16  Ram=2

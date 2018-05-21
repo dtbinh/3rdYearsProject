@@ -1,0 +1,18 @@
+[PROJECT]
+Target=PIC24_DEMO_BITWISE.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=PIC24_DEMO_BITWISE.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[PIC24_DEMO_BITWISE.c]
+Type=4
+[mru-list]
+1=PIC24_DEMO_BITWISE.c
+[Units]
+Count=2
+1=PIC24_DEMO_BITWISE
+2=BITWISE_LIB
+Link=1

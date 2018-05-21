@@ -1,0 +1,37 @@
+ÀÄserial
+   ÃÄmain  0/310  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄDisableIntr  0/10  Ram=0
+   ³  ÃÄHardwareInit  0/24  Ram=3
+   ³  ÃÄGlobalVarInit  0/22  Ram=0
+   ³  ÃÄDynamicMemInit  0/44  Ram=0
+   ³  ³  ÀÄmalloc  0/178  Ram=13
+   ³  ³     ÃÄcreate_node  0/36  Ram=9
+   ³  ³     ÃÄinsert_node_after  0/52  Ram=7
+   ³  ³     ÃÄupdate_node  0/16  Ram=7
+   ³  ³     ÀÄupdate_node  0/16  Ram=7
+   ³  ÃÄUARTQueueInit  0/34  Ram=0
+   ³  ³  ÃÄQPtrXInit  0/62  Ram=9
+   ³  ³  ÀÄQ8UXInit  0/62  Ram=9
+   ³  ÃÄEnableIntr  0/8  Ram=0
+   ³  ÃÄDisableIntr  0/10  Ram=0
+   ³  ÃÄQPtrXGet  0/106  Ram=13
+   ³  ÃÄSendTx1  0/102  Ram=10
+   ³  ³  ÃÄstrlen  0/34  Ram=8
+   ³  ³  ÃÄQ8UXCount  0/16  Ram=5
+   ³  ³  ÀÄQ8UXPut  0/108  Ram=12
+   ³  ÃÄfree  0/66  Ram=9
+   ³  ³  ÃÄupdate_node  0/16  Ram=7
+   ³  ³  ÀÄtraverse  0/126  Ram=13
+   ³  ³     ÃÄremove_node  0/46  Ram=7
+   ³  ³     ÀÄupdate_node  0/16  Ram=7
+   ³  ÃÄEnableIntr  0/8  Ram=0
+   ³  ÀÄEnableIntr  0/8  Ram=0
+   ÃÄRDA1  0/228  Ram=6
+   ³  ÃÄQPtrXPut  0/106  Ram=11
+   ³  ÃÄfree  0/66  Ram=9
+   ³  ³  ÀÄ*
+   ³  ÀÄmalloc  0/178  Ram=13
+   ³     ÀÄ*
+   ÀÄTBE1ISR  0/68  Ram=2
+      ÀÄQ8UXGet  0/100  Ram=13

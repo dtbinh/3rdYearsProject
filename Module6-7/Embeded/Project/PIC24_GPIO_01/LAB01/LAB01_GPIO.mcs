@@ -1,0 +1,26 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\PIC24_GPIO_01\LAB01\BITWISE_LIB.o
+Folder=Intermediary
+[File001]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\PIC24_GPIO_01\LAB01\LAB01_GPIO.o
+Folder=Intermediary
+[File002]
+Location=BITWISE_LIB.ERR
+Folder=Output
+[File003]
+Location=LAB01_GPIO.ERR
+Folder=Output
+[File004]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\PIC24_GPIO_01\LAB01\LAB01_GPIO.COF
+Folder=Output
+[File005]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\PIC24_GPIO_01\LAB01\LAB01_GPIO.HEX
+Folder=Output
+[File006]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\PIC24_GPIO_01\LAB01\LAB01_GPIO.LST
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

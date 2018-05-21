@@ -1,0 +1,690 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ADC_CLOCK::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	363;"	d	line:363
+ADC_CLOCK_DIV_16::0x000F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	367;"	d	line:367
+ADC_CLOCK_DIV_2::0x0001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	364;"	d	line:364
+ADC_CLOCK_DIV_32::0x001F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	368;"	d	line:368
+ADC_CLOCK_DIV_4::0x0003	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	365;"	d	line:365
+ADC_CLOCK_DIV_64::0x003F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	369;"	d	line:369
+ADC_CLOCK_DIV_8::0x0007	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	366;"	d	line:366
+ADC_CLOCK_INTERNAL::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	370;"	d	line:370
+ADC_OFF::0x10000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	362;"	d	line:362
+ADC_READ_ONLY::0x06	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	384;"	d	line:384
+ADC_START_AND_READ::0x07	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	382;"	d	line:382
+ADC_START_ONLY::0x01	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	383;"	d	line:383
+ADC_TAD_MUL_0::0x1F00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	374;"	d	line:374
+ADC_TAD_MUL_16::0x0F00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	378;"	d	line:378
+ADC_TAD_MUL_2::0x1D00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	375;"	d	line:375
+ADC_TAD_MUL_31::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	379;"	d	line:379
+ADC_TAD_MUL_4::0x1B00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	376;"	d	line:376
+ADC_TAD_MUL_8::0x1700	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	377;"	d	line:377
+ALL_ANALOG::0xFFFFFFFF	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	390;"	d	line:390
+AX0::PIN_A0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	89;"	d	line:89
+AX1::PIN_A1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	90;"	d	line:90
+AX2::PIN_B0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	91;"	d	line:91
+AX3::PIN_B1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	92;"	d	line:92
+B2_B3_B0_B1::B2_B3_NC_NC|NC_NC_B0_B1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	421;"	d	line:421
+B2_B3_NC_NC::0x401	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	415;"	d	line:415
+B2_VR_B0_VR::B2_VR_NC_NC|NC_NC_B0_VR	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	422;"	d	line:422
+B2_VR_NC_NC::0x400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	416;"	d	line:416
+B3_VR_B1_VR::B3_VR_NC_NC|NC_NC_B1_VR	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	423;"	d	line:423
+B3_VR_NC_NC::0x402	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	417;"	d	line:417
+BL_SUPPORT_H	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	9;"	d	line:9
+BOOLEAN::int1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	96;"	d	line:96
+BYTE::unsignedint8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	95;"	d	line:95
+C1_INVERT::0x10	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	425;"	d	line:425
+C1_OUTPUT::0x100	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	427;"	d	line:427
+C2_INVERT::0x20	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	426;"	d	line:426
+C2_OUTPUT::0x200	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	428;"	d	line:428
+CAPTURE_CONTINUE_IDLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	256;"	d	line:256
+CAPTURE_DIV_16::0x0005	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	241;"	d	line:241
+CAPTURE_DIV_4::0x0004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	240;"	d	line:240
+CAPTURE_EE::0x0001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	237;"	d	line:237
+CAPTURE_FE::0x0002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	238;"	d	line:238
+CAPTURE_HALT_IDLE::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	255;"	d	line:255
+CAPTURE_INTERRUPT_ONLY::0x0007	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	242;"	d	line:242
+CAPTURE_OFF::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	236;"	d	line:236
+CAPTURE_RE::0x0003	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	239;"	d	line:239
+CAPTURE_TIMER2::0x0080	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	251;"	d	line:251
+CAPTURE_TIMER3::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	252;"	d	line:252
+CDATPIC24_INCLUDED	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	11;"	d	line:11
+COMPARE_CLR_ON_MATCH::0x0002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	268;"	d	line:268
+COMPARE_CONTINUE_IDLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	281;"	d	line:281
+COMPARE_CONT_PULSE::0x0005	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	271;"	d	line:271
+COMPARE_HALT_IDLE::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	280;"	d	line:280
+COMPARE_OFF::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	266;"	d	line:266
+COMPARE_PWM::0x0006	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	272;"	d	line:272
+COMPARE_PWM_FAULT::0x0007	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	273;"	d	line:273
+COMPARE_SET_ON_MATCH::0x0001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	267;"	d	line:267
+COMPARE_SINGLE_PULSE::0x0004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	270;"	d	line:270
+COMPARE_TIMER2::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	276;"	d	line:276
+COMPARE_TIMER3::0x0008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	277;"	d	line:277
+COMPARE_TOGGEL::0x0003	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	269;"	d	line:269
+CONFIG_PIC24_INCLUDED	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	13;"	d	line:13
+ERASE_SIZE::2048	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	17;"	d	line:17
+FALSE::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	92;"	d	line:92
+GLOBAL::0x400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	803;"	d	line:803
+H_TO_L::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	799;"	d	line:799
+HardwareInit	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.C	103;"	f	line:103	file:	signature:(void)
+HardwareInit	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.C	63;"	p	line:63	file:	signature:(void)
+INTERRUPT_EVERY_CAPTURE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	245;"	d	line:245
+INTERRUPT_FOURTH_CAPTURE::0x0060	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	248;"	d	line:248
+INTERRUPT_SECOND_CAPTURE::0x0020	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	246;"	d	line:246
+INTERRUPT_THIRD_CAPTURE::0x0040	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	247;"	d	line:247
+INTR_ALTERNATE::0x200	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	805;"	d	line:805
+INTR_CN_PIN::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	815;"	d	line:815
+INTR_GLOBAL::0x400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	802;"	d	line:802
+INTR_LEVEL0::0x500	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	806;"	d	line:806
+INTR_LEVEL1::0x501	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	807;"	d	line:807
+INTR_LEVEL2::0x502	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	808;"	d	line:808
+INTR_LEVEL3::0x503	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	809;"	d	line:809
+INTR_LEVEL4::0x504	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	810;"	d	line:810
+INTR_LEVEL5::0x505	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	811;"	d	line:811
+INTR_LEVEL6::0x506	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	812;"	d	line:812
+INTR_LEVEL7::0x507	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	813;"	d	line:813
+INTR_NORMAL::0x100	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	804;"	d	line:804
+INT_ADC1::78	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	833;"	d	line:833
+INT_ADDRERR::2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	818;"	d	line:818
+INT_CNI::84	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	836;"	d	line:836
+INT_COMP::152	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	855;"	d	line:855
+INT_CRC::174	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	858;"	d	line:858
+INT_EXT0::6	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	821;"	d	line:821
+INT_EXT1::85	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	837;"	d	line:837
+INT_EXT2::94	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	842;"	d	line:842
+INT_IC1::7	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	822;"	d	line:822
+INT_IC2::70	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	825;"	d	line:825
+INT_IC3::102	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	847;"	d	line:847
+INT_IC4::103	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	848;"	d	line:848
+INT_IC5::104	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	849;"	d	line:849
+INT_LVD::179	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	859;"	d	line:859
+INT_MATHERR::4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	820;"	d	line:820
+INT_MI2C2::115	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	852;"	d	line:852
+INT_MI2C::82	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	835;"	d	line:835
+INT_OC1::8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	823;"	d	line:823
+INT_OC2::71	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	826;"	d	line:826
+INT_OC3::90	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	838;"	d	line:838
+INT_OC4::91	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	839;"	d	line:839
+INT_OC5::106	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	850;"	d	line:850
+INT_OSCFAIL::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	817;"	d	line:817
+INT_PMP::164	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	856;"	d	line:856
+INT_RDA2::95	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	843;"	d	line:843
+INT_RDA::76	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	831;"	d	line:831
+INT_RTC::173	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	857;"	d	line:857
+INT_SI2C2::114	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	851;"	d	line:851
+INT_SI2C::81	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	834;"	d	line:834
+INT_SPI1::75	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	830;"	d	line:830
+INT_SPI1E::74	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	829;"	d	line:829
+INT_SPI2::98	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	846;"	d	line:846
+INT_SPI2E::97	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	845;"	d	line:845
+INT_STACKERR::3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	819;"	d	line:819
+INT_TBE2::96	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	844;"	d	line:844
+INT_TBE::77	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	832;"	d	line:832
+INT_TIMER1::9	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	824;"	d	line:824
+INT_TIMER2::72	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	827;"	d	line:827
+INT_TIMER3::73	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	828;"	d	line:828
+INT_TIMER4::92	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	840;"	d	line:840
+INT_TIMER5::93	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	841;"	d	line:841
+INT_UART1E::130	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	853;"	d	line:853
+INT_UART2E::131	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	854;"	d	line:854
+LED0::PIN_A2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	77;"	d	line:77
+LED1::PIN_A4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	78;"	d	line:78
+LED2::PIN_B2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	79;"	d	line:79
+LED3::PIN_B3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	80;"	d	line:80
+LOADER_ADDR::0xC00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	21;"	d	line:21
+LOADER_END::LOADER_SIZE	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	20;"	d	line:20
+LOADER_PAGES::3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	16;"	d	line:16
+LOADER_SIZE::((LOADER_PAGES*(ERASE_SIZE/2))	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\BL_Support.h	19;"	d	line:19
+L_TO_H::0x40	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	798;"	d	line:798
+NC_NC_B0_B1::0x804	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	418;"	d	line:418
+NC_NC_B0_VR::0x800	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	419;"	d	line:419
+NC_NC_B1_VR::0x808	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	420;"	d	line:420
+NC_NC_NC_NC::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	414;"	d	line:414
+NO_ANALOGS::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	389;"	d	line:389
+OSC_CLOCK::2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	179;"	d	line:179
+OSC_CRYSTAL::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	178;"	d	line:178
+OSC_INTERNAL::32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	177;"	d	line:177
+OSC_RC::3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	180;"	d	line:180
+OSC_SECONDARY::16	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	181;"	d	line:181
+PAR_ADDR_NOT_MULTIPLEXED::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	473;"	d	line:473
+PAR_ALP_ACTIVE_HIGH::0x0020	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	479;"	d	line:479
+PAR_BEP_ACTIVE_HIGH::0x0004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	480;"	d	line:480
+PAR_CONTINUE_IN_IDLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	472;"	d	line:472
+PAR_CS_00::0x0080	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	488;"	d	line:488
+PAR_CS_01::0x0088	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	491;"	d	line:491
+PAR_CS_0X::0x0040	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	487;"	d	line:487
+PAR_CS_10::0x0090	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	490;"	d	line:490
+PAR_CS_11::0x0098	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	489;"	d	line:489
+PAR_CS_1X::0x0050	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	486;"	d	line:486
+PAR_CS_X0::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	485;"	d	line:485
+PAR_CS_X1::0x0008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	484;"	d	line:484
+PAR_CS_XX::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	483;"	d	line:483
+PAR_DEC_ADDR::0x10000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	496;"	d	line:496
+PAR_DISABLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	470;"	d	line:470
+PAR_ENABLE::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	469;"	d	line:469
+PAR_FULL_ADDR_MULTIPLEXED::0x1000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	475;"	d	line:475
+PAR_INC_ADDR::0x08000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	497;"	d	line:497
+PAR_INTR_ON_3_RW_BUF::0x60000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	494;"	d	line:494
+PAR_INTR_ON_RW::0x20000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	492;"	d	line:492
+PAR_LOW_ADDR_MULTIPLEXED::0x0800	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	474;"	d	line:474
+PAR_MASTER_MODE_1::0x03000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	498;"	d	line:498
+PAR_MASTER_MODE_2::0x02000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	499;"	d	line:499
+PAR_NO_INTR_STALL_ACTIVATED::0x40000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	493;"	d	line:493
+PAR_PSP_AUTO_INC::0x18000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	495;"	d	line:495
+PAR_PTBEEN_ENABLE::0x0400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	476;"	d	line:476
+PAR_PTRDEN_ENABLE::0x0100	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	478;"	d	line:478
+PAR_PTWREN_ENABLE::0x0200	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	477;"	d	line:477
+PAR_RDSP_ACTIVE_HIGH::0x0001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	482;"	d	line:482
+PAR_STOP_IN_IDLE::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	471;"	d	line:471
+PAR_WAITB1::0x00000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	500;"	d	line:500
+PAR_WAITB2::0x00400000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	501;"	d	line:501
+PAR_WAITB3::0x00800000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	502;"	d	line:502
+PAR_WAITB4::0x00C00000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	503;"	d	line:503
+PAR_WAITE1::0x00000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	509;"	d	line:509
+PAR_WAITE2::0x00010000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	510;"	d	line:510
+PAR_WAITE3::0x00020000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	511;"	d	line:511
+PAR_WAITE4::0x00030000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	512;"	d	line:512
+PAR_WAITM0::0x00000000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	504;"	d	line:504
+PAR_WAITM15::0x003C0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	508;"	d	line:508
+PAR_WAITM1::0x00040000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	505;"	d	line:505
+PAR_WAITM2::0x00080000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	506;"	d	line:506
+PAR_WAITM3::0x000C0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	507;"	d	line:507
+PAR_WRSP_ACTIVE_HIGH::0x0002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	481;"	d	line:481
+PIC24_TIMER_01_C_SRC	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.C	33;"	d	line:33	file:
+PIC24_TIMER_01_INCLUDED	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.H	34;"	d	line:34
+PIN_A0::5648	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	68;"	d	line:68
+PIN_A1::5649	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	69;"	d	line:69
+PIN_A2::5650	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	70;"	d	line:70
+PIN_A3::5651	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	71;"	d	line:71
+PIN_A4::5652	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	72;"	d	line:72
+PIN_B0::5712	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	74;"	d	line:74
+PIN_B10::5722	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	84;"	d	line:84
+PIN_B11::5723	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	85;"	d	line:85
+PIN_B12::5724	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	86;"	d	line:86
+PIN_B13::5725	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	87;"	d	line:87
+PIN_B14::5726	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	88;"	d	line:88
+PIN_B15::5727	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	89;"	d	line:89
+PIN_B1::5713	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	75;"	d	line:75
+PIN_B2::5714	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	76;"	d	line:76
+PIN_B3::5715	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	77;"	d	line:77
+PIN_B4::5716	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	78;"	d	line:78
+PIN_B5::5717	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	79;"	d	line:79
+PIN_B6::5718	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	80;"	d	line:80
+PIN_B7::5719	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	81;"	d	line:81
+PIN_B8::5720	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	82;"	d	line:82
+PIN_B9::5721	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	83;"	d	line:83
+RESTART_BROWNOUT::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	161;"	d	line:161
+RESTART_ILLEGAL_OP::14	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	165;"	d	line:165
+RESTART_MCLR::7	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	164;"	d	line:164
+RESTART_POWER_UP::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	160;"	d	line:160
+RESTART_SOFTWARE::6	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	163;"	d	line:163
+RESTART_TRAP_CONFLICT::15	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	166;"	d	line:166
+RESTART_WATCHDOG::4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	162;"	d	line:162
+RTC_ALARM_10_MINUTES::0x1000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	562;"	d	line:562
+RTC_ALARM_10_SECONDS::0x0800	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	560;"	d	line:560
+RTC_ALARM_DAY::0x1800	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	564;"	d	line:564
+RTC_ALARM_DISABLE::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	554;"	d	line:554
+RTC_ALARM_ENABLE::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	553;"	d	line:553
+RTC_ALARM_HALFSECOND::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	558;"	d	line:558
+RTC_ALARM_HOUR::0x1400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	563;"	d	line:563
+RTC_ALARM_MINUTE::0x0C00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	561;"	d	line:561
+RTC_ALARM_MONTH::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	566;"	d	line:566
+RTC_ALARM_SECOND::0x0400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	559;"	d	line:559
+RTC_ALARM_WEEK::0x1C00	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	565;"	d	line:565
+RTC_ALARM_YEAR::0x2400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	567;"	d	line:567
+RTC_CHIME_DISABLE::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	556;"	d	line:556
+RTC_CHIME_ENABLE::0x4000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	555;"	d	line:555
+RTC_DISABLE::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	548;"	d	line:548
+RTC_ENABLE::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	547;"	d	line:547
+RTC_OUTPUT_ALARM::0x00400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	550;"	d	line:550
+RTC_OUTPUT_SECONDS::0x20400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	549;"	d	line:549
+SLEEP_FULL::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	169;"	d	line:169
+SLEEP_IDLE::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	170;"	d	line:170
+SPI_CLK_DIV_112::0x0005	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	335;"	d	line:335
+SPI_CLK_DIV_128::0x0001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	336;"	d	line:336
+SPI_CLK_DIV_12::0x0016	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	325;"	d	line:325
+SPI_CLK_DIV_16::0x001D	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	326;"	d	line:326
+SPI_CLK_DIV_192::0x0014	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	337;"	d	line:337
+SPI_CLK_DIV_1::0x001F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	317;"	d	line:317
+SPI_CLK_DIV_20::0x000E	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	327;"	d	line:327
+SPI_CLK_DIV_24::0x000A	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	328;"	d	line:328
+SPI_CLK_DIV_256::0x0010	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	338;"	d	line:338
+SPI_CLK_DIV_28::0x0006	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	329;"	d	line:329
+SPI_CLK_DIV_2::0x001B	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	318;"	d	line:318
+SPI_CLK_DIV_320::0x000C	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	339;"	d	line:339
+SPI_CLK_DIV_32::0x0002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	330;"	d	line:330
+SPI_CLK_DIV_384::0x0008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	340;"	d	line:340
+SPI_CLK_DIV_3::0x0017	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	319;"	d	line:319
+SPI_CLK_DIV_448::0x0004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	341;"	d	line:341
+SPI_CLK_DIV_48::0x0015	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	331;"	d	line:331
+SPI_CLK_DIV_4::0x001E	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	320;"	d	line:320
+SPI_CLK_DIV_512::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	342;"	d	line:342
+SPI_CLK_DIV_5::0x000F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	321;"	d	line:321
+SPI_CLK_DIV_64::0x001C	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	332;"	d	line:332
+SPI_CLK_DIV_6::0x000B	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	322;"	d	line:322
+SPI_CLK_DIV_7::0x0007	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	323;"	d	line:323
+SPI_CLK_DIV_80::0x000D	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	333;"	d	line:333
+SPI_CLK_DIV_8::0x0003	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	324;"	d	line:324
+SPI_CLK_DIV_96::0x0009	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	334;"	d	line:334
+SPI_H_TO_L::SPI_SCK_IDLE_HIGH	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	346;"	d	line:346
+SPI_L_TO_H::SPI_SCK_IDLE_LOW	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	345;"	d	line:345
+SPI_MASTER::0x0020	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	298;"	d	line:298
+SPI_MODE_16B::0x0400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	307;"	d	line:307
+SPI_MODE_8B::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	308;"	d	line:308
+SPI_SAMPLE_AT_END::0x0200	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	310;"	d	line:310
+SPI_SAMPLE_AT_MIDDLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	311;"	d	line:311
+SPI_SCK_IDLE_HIGH::0x0040	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	301;"	d	line:301
+SPI_SCK_IDLE_LOW::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	302;"	d	line:302
+SPI_SLAVE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	299;"	d	line:299
+SPI_SS_DISABLED::0x0080	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	314;"	d	line:314
+SPI_SS_ENABLED::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	313;"	d	line:313
+SPI_XMIT_H_TO_L::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	305;"	d	line:305
+SPI_XMIT_L_TO_H::0x0100	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	304;"	d	line:304
+SW0::PIN_B4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	83;"	d	line:83
+SW1::PIN_B5	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	84;"	d	line:84
+SW2::PIN_B6	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	85;"	d	line:85
+SW3::PIN_B7	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CONFIG_PIC24.H	86;"	d	line:86
+T1_EXTERNAL_RTC::0xC002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	228;"	d	line:228
+T1_EXTERNAL_SYNC::0x8006	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	227;"	d	line:227
+TMR_32_BIT::0x0008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	222;"	d	line:222
+TMR_CONTINUE_IDLE::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	225;"	d	line:225
+TMR_DISABLED::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	213;"	d	line:213
+TMR_DIV_BY_1::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	218;"	d	line:218
+TMR_DIV_BY_256::0x0030	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	221;"	d	line:221
+TMR_DIV_BY_64::0x0020	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	220;"	d	line:220
+TMR_DIV_BY_8::0x0010	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	219;"	d	line:219
+TMR_EXTERNAL::0x8002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	215;"	d	line:215
+TMR_GATE::0x0040	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	216;"	d	line:216
+TMR_HALT_IDLE::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	224;"	d	line:224
+TMR_INTERNAL::0x8000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	214;"	d	line:214
+TRUE::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	93;"	d	line:93
+Tmr1ISR	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.C	122;"	f	line:122	signature:(void)
+UART_ADDRESS::2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	117;"	d	line:117
+UART_AUTODETECT::8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	119;"	d	line:119
+UART_AUTODETECT_NOWAIT::9	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	120;"	d	line:120
+UART_DATA::4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	118;"	d	line:118
+UART_SEND_BREAK::13	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	122;"	d	line:122
+UART_WAKEUP_ON_RDA::10	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	121;"	d	line:121
+VREF_ANALOG::0x0090	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	439;"	d	line:439
+VREF_DISABLED::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	437;"	d	line:437
+VREF_HIGH::0x0080	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	441;"	d	line:441
+VREF_LOW::0x00A0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	442;"	d	line:442
+VREF_OUTPUT::0x0040	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	444;"	d	line:444
+VREF_VDD::0x4000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	405;"	d	line:405
+VREF_VREF::0x6000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	404;"	d	line:404
+VREF_VSS_VDD::0x0080	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	438;"	d	line:438
+VSS_VDD::0x0000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	403;"	d	line:403
+VSS_VREF::0x2000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	406;"	d	line:406
+WDT_128MS::0x009	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	140;"	d	line:140
+WDT_131S::0x031	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	150;"	d	line:150
+WDT_16MS::0x006	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	137;"	d	line:137
+WDT_16S::0x010	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	147;"	d	line:147
+WDT_1MS::0x002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	133;"	d	line:133
+WDT_1S::0x00C	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	143;"	d	line:143
+WDT_256MS::0x00A	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	141;"	d	line:141
+WDT_2MS::0x003	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	134;"	d	line:134
+WDT_2S::0x00D	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	144;"	d	line:144
+WDT_32MS::0x007	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	138;"	d	line:138
+WDT_33S::0x011	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	148;"	d	line:148
+WDT_4MS::0x004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	135;"	d	line:135
+WDT_4S::0x00E	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	145;"	d	line:145
+WDT_512MS::0x00B	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	142;"	d	line:142
+WDT_64MS::0x008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	139;"	d	line:139
+WDT_65S::0x030	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	149;"	d	line:149
+WDT_8MS::0x005	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	136;"	d	line:136
+WDT_8S::0x00F	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	146;"	d	line:146
+WDT_OFF::0	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	131;"	d	line:131
+WDT_ON::1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	130;"	d	line:130
+__ADDRESS__	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	773;"	t	line:773
+_bif	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	26;"	d	line:26
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	577;"	p	line:577	signature:(unsigned int8, unsigned int8)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	578;"	p	line:578	signature:(signed int8, signed int8)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	579;"	p	line:579	signature:(unsigned int16, unsigned int16)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	580;"	p	line:580	signature:(signed int16, signed int16)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	585;"	p	line:585	signature:(unsigned int32, unsigned int32)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	586;"	p	line:586	signature:(signed int32, signed int32)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	587;"	p	line:587	signature:(unsigned int48, unsigned int48)
+_mul	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	588;"	p	line:588	signature:(signed int48, signed int48)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	573;"	p	line:573	signature:(signed int8 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	574;"	p	line:574	signature:(signed int16 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	575;"	p	line:575	signature:(signed int32 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	576;"	p	line:576	signature:(float32 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	581;"	p	line:581	signature:(signed int48 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	582;"	p	line:582	signature:(signed int64 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	583;"	p	line:583	signature:(float48 x)
+abs	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	584;"	p	line:584	signature:(float64 x)
+adc_done	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	358;"	p	line:358	signature:(void)
+bit_clear	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	619;"	p	line:619	signature:(unsigned int8 var, unsigned int8 bit)
+bit_clear	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	620;"	p	line:620	signature:(unsigned int16 var, unsigned int8 bit)
+bit_clear	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	621;"	p	line:621	signature:(unsigned int32 var, unsigned int8 bit)
+bit_clear	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	627;"	p	line:627	signature:(unsigned int48 var, unsigned int8 bit)
+bit_clear	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	628;"	p	line:628	signature:(unsigned int64 var, unsigned int8 bit)
+bit_first	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	631;"	p	line:631	signature:(int1 value, unsigned int16 var)
+bit_last	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	632;"	p	line:632	signature:(int16 var)
+bit_last	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	633;"	p	line:633	signature:(int1 value, int16 var)
+bit_set	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	616;"	p	line:616	signature:(unsigned int8 var, unsigned int8 bit)
+bit_set	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	617;"	p	line:617	signature:(unsigned int16 var, unsigned int8 bit)
+bit_set	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	618;"	p	line:618	signature:(unsigned int32 var, unsigned int8 bit)
+bit_set	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	625;"	p	line:625	signature:(unsigned int48 var, unsigned int8 bit)
+bit_set	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	626;"	p	line:626	signature:(unsigned int64 var, unsigned int8 bit)
+bit_test	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	622;"	p	line:622	signature:(unsigned int8 var, unsigned int8 bit)
+bit_test	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	623;"	p	line:623	signature:(unsigned int16 var, unsigned int8 bit)
+bit_test	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	624;"	p	line:624	signature:(unsigned int32 var, unsigned int8 bit)
+bit_test	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	629;"	p	line:629	signature:(unsigned int48 var, unsigned int8 bit)
+bit_test	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	630;"	p	line:630	signature:(unsigned int64 var, unsigned int8 bit)
+clear_interrupt	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	792;"	p	line:792	signature:(unsigned int16 interrupt)
+crc_calc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	519;"	p	line:519	signature:(unsigned int16 data)
+crc_calc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	520;"	p	line:520	signature:(unsigned int16 *ptr, unsigned int16 count)
+crc_calc8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	521;"	p	line:521	signature:(unsigned int8 data)
+crc_calc8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	522;"	p	line:522	signature:(unsigned int8 *ptr, unsigned int16 count)
+crc_init	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	518;"	p	line:518	signature:(unsigned int16 value)
+delay_cycles	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	636;"	p	line:636	signature:(unsigned int16 count)
+delay_ms	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	637;"	p	line:637	signature:(unsigned int16 time)
+delay_us	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	638;"	p	line:638	signature:(unsigned int16 time)
+disable_interrupts	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	791;"	p	line:791	signature:(unsigned int16 interrupt)
+enable_interrupts	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	790;"	p	line:790	signature:(unsigned int16 interrupt)
+erase_program_memory	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	780;"	p	line:780	signature:(__ADDRESS__ address)
+ext_int_edge	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	795;"	p	line:795	signature:(unsigned int8 source, unsigned int8 edge)
+fgetc::getch	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	99;"	d	line:99
+fgets::gets	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	103;"	d	line:103
+float32::float	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	32;"	d	line:32
+float48::float	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	33;"	d	line:33
+float64::double	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	34;"	d	line:34
+fprintf	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	652;"	p	line:652	signature:(unsigned int8 stream, char* string, ...)
+fputc::putchar	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	102;"	d	line:102
+fputc_send	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	654;"	p	line:654	signature:(unsigned int8 stream)
+fputs::puts	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	104;"	d	line:104
+get_capture	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	233;"	p	line:233	signature:(unsigned int8 module)
+get_capture	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	234;"	p	line:234	signature:(unsigned int8 module, int1 wait)
+get_capture_event	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	765;"	p	line:765	signature:(void)
+get_capture_event	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	766;"	p	line:766	signature:(unsigned int8 stream)
+get_capture_time	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	763;"	p	line:763	signature:(void)
+get_capture_time	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	764;"	p	line:764	signature:(unsigned int8 stream)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	733;"	p	line:733	signature:(void)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	734;"	p	line:734	signature:(void)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	735;"	p	line:735	signature:(void)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	736;"	p	line:736	signature:(void)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	737;"	p	line:737	signature:(unsigned int8 stream)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	738;"	p	line:738	signature:(unsigned int8 stream)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	739;"	p	line:739	signature:(unsigned int8 stream)
+get_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	740;"	p	line:740	signature:(unsigned int8 stream)
+get_timer1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	189;"	p	line:189	signature:(void)
+get_timer2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	193;"	p	line:193	signature:(void)
+get_timer23	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	199;"	p	line:199	signature:(void)
+get_timer3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	197;"	p	line:197	signature:(void)
+get_timer4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	203;"	p	line:203	signature:(void)
+get_timer45	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	209;"	p	line:209	signature:(void)
+get_timer5	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	207;"	p	line:207	signature:(void)
+get_tris_a	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	46;"	p	line:46	signature:(void)
+get_tris_b	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	47;"	p	line:47	signature:(void)
+getc::getch	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	98;"	d	line:98
+getch	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	645;"	p	line:645	signature:(void)
+getch	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	646;"	p	line:646	signature:(unsigned int8 stream)
+getchar::getch	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	100;"	d	line:100
+gets	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	647;"	p	line:647	signature:(char* string)
+gets	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	648;"	p	line:648	signature:(char* string, unsigned int8 stream)
+goto_address	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	775;"	p	line:775	signature:(__ADDRESS__ address)
+i2c_init	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	680;"	p	line:680	signature:(unsigned int32 baud)
+i2c_init	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	681;"	p	line:681	signature:(unsigned int8 stream, unsigned int32 baud)
+i2c_isr_state	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	675;"	p	line:675	signature:(void)
+i2c_poll	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	678;"	p	line:678	signature:(void)
+i2c_poll	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	679;"	p	line:679	signature:(unsigned int8 stream)
+i2c_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	665;"	p	line:665	signature:(void)
+i2c_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	666;"	p	line:666	signature:(unsigned int8 stream)
+i2c_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	667;"	p	line:667	signature:(unsigned int8 stream, int1 ack)
+i2c_slaveaddr	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	676;"	p	line:676	signature:(unsigned int8 addr)
+i2c_slaveaddr	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	677;"	p	line:677	signature:(unsigned int8 stream, unsigned int8 addr)
+i2c_start	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	670;"	p	line:670	signature:(void)
+i2c_start	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	671;"	p	line:671	signature:(unsigned int8 stream)
+i2c_start	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	672;"	p	line:672	signature:(unsigned int8 stream, unsigned int8 restart)
+i2c_stop	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	673;"	p	line:673	signature:(void)
+i2c_stop	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	674;"	p	line:674	signature:(unsigned int8 stream)
+i2c_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	668;"	p	line:668	signature:(unsigned int8 data)
+i2c_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	669;"	p	line:669	signature:(unsigned int8 stream, unsigned int8 data)
+input	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	58;"	p	line:58	signature:(unsigned int16 pin)
+input_a	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	50;"	p	line:50	signature:(void)
+input_b	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	51;"	p	line:51	signature:(void)
+input_change_a	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	52;"	p	line:52	signature:(void)
+input_change_b	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	53;"	p	line:53	signature:(void)
+input_state	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	59;"	p	line:59	signature:(unsigned int16 pin)
+int16::int	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	28;"	d	line:28
+int16s	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	23;"	t	line:23
+int16u	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	22;"	t	line:22
+int1::char	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	35;"	d	line:35
+int32::long	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	29;"	d	line:29
+int32s	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	25;"	t	line:25
+int32u	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	24;"	t	line:24
+int48::long	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	30;"	d	line:30
+int64::longlong	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	31;"	d	line:31
+int64s	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	27;"	t	line:27
+int64u	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	26;"	t	line:26
+int8::char	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	27;"	d	line:27
+int8s	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	21;"	t	line:21
+int8u	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\CDATPIC24.H	20;"	t	line:20
+interrupt_active	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	793;"	p	line:793	signature:(unsigned int16 interrupt)
+interrupt_enabled	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	794;"	p	line:794	signature:(unsigned int16 interrupt)
+jump_to_isr	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	796;"	p	line:796	signature:(unsigned int16 address)
+kbhit	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	649;"	p	line:649	signature:(void)
+kbhit	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	650;"	p	line:650	signature:(unsigned int8 stream)
+label_address	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	776;"	p	line:776	signature:(__ADDRESS__ label)
+main	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\PIC24_TIMER_01.C	92;"	f	line:92	signature:(void)
+make16	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	604;"	p	line:604	signature:(unsigned int8 varhigh, unsigned int8 varlow)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	605;"	p	line:605	signature:(unsigned int16 var1)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	606;"	p	line:606	signature:(unsigned int16 var1, unsigned int16 var2)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	607;"	p	line:607	signature:(unsigned int16 var1, unsigned int8 var2)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	608;"	p	line:608	signature:(unsigned int16 var1, unsigned int8 var2, unsigned int8 var3)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	609;"	p	line:609	signature:(unsigned int8 var1)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	610;"	p	line:610	signature:(unsigned int8 var1, unsigned int8 var2)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	611;"	p	line:611	signature:(unsigned int8 var1, unsigned int8 var2, unsigned int8 var3)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	612;"	p	line:612	signature:(unsigned int8 var1, unsigned int8 var2, unsigned int8 var3, unsigned int8 var4)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	613;"	p	line:613	signature:(unsigned int8 var1, unsigned int16 var2)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	614;"	p	line:614	signature:(unsigned int8 var1, unsigned int16 var2, unsigned int8 var3)
+make32	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	615;"	p	line:615	signature:(unsigned int8 var1, unsigned int8 var2, unsigned int16 var3)
+make8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	602;"	p	line:602	signature:(unsigned int16 var, unsigned int8 offset)
+make8	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	603;"	p	line:603	signature:(unsigned int32 var, unsigned int8 offset)
+memcpy	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	594;"	p	line:594	signature:(unsigned int8* destination, unsigned int8* source, unsigned int16 num)
+memset	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	593;"	p	line:593	signature:(unsigned int8* destination, unsigned int8 value, unsigned int16 num)
+output_a	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	48;"	p	line:48	signature:(unsigned int16 value)
+output_b	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	49;"	p	line:49	signature:(unsigned int16 value)
+output_bit	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	63;"	p	line:63	signature:(unsigned int16 pin, int1 level)
+output_drive	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	65;"	p	line:65	signature:(unsigned int16 pin)
+output_float	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	64;"	p	line:64	signature:(unsigned int16 pin)
+output_high	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	61;"	p	line:61	signature:(unsigned int16 pin)
+output_low	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	60;"	p	line:60	signature:(unsigned int16 pin)
+output_toggle	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	62;"	p	line:62	signature:(unsigned int16 pin)
+pmp_address	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	454;"	p	line:454	signature:(unsigned int16 address)
+pmp_input_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	458;"	p	line:458	signature:(void)
+pmp_output_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	457;"	p	line:457	signature:(void)
+pmp_overflow	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	459;"	p	line:459	signature:(void)
+pmp_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	455;"	p	line:455	signature:(void)
+pmp_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	456;"	p	line:456	signature:(unsigned int8 data)
+printf	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	651;"	p	line:651	signature:(char* string, ...)
+psp_input_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	466;"	p	line:466	signature:(void)
+psp_output_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	465;"	p	line:465	signature:(void)
+psp_overflow	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	467;"	p	line:467	signature:(void)
+psp_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	461;"	p	line:461	signature:(void)
+psp_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	462;"	p	line:462	signature:(unsigned int16 address)
+psp_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	463;"	p	line:463	signature:(unsigned int8 data)
+psp_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	464;"	p	line:464	signature:(unsigned int8 data, unsigned int16 address)
+putc::putchar	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	101;"	d	line:101
+putc_send	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	653;"	p	line:653	signature:(void)
+putchar	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	641;"	p	line:641	signature:(char cdata)
+putchar	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	642;"	p	line:642	signature:(char cdata, unsigned int8 stream)
+puts	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	643;"	p	line:643	signature:(char* string)
+puts	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	644;"	p	line:644	signature:(char* string, unsigned int8 stream)
+pwm_off	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	753;"	p	line:753	signature:(void)
+pwm_off	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	754;"	p	line:754	signature:(unsigned int8 stream)
+pwm_on	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	751;"	p	line:751	signature:(void)
+pwm_on	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	752;"	p	line:752	signature:(unsigned int8 stream)
+pwm_set_duty	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	755;"	p	line:755	signature:(unsigned int16 duty)
+pwm_set_duty	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	756;"	p	line:756	signature:(unsigned int8 stream, unsigned int16 duty)
+pwm_set_duty_percent	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	757;"	p	line:757	signature:(unsigned int16 percent)
+pwm_set_duty_percent	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	758;"	p	line:758	signature:(unsigned int8 stream, unsigned int16 percent)
+pwm_set_frequency	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	759;"	p	line:759	signature:(unsigned int32 frequency)
+pwm_set_frequency	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	760;"	p	line:760	signature:(unsigned int8 stream, unsigned int32 frequency)
+rcv_buffer_bytes	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	657;"	p	line:657	signature:(void)
+rcv_buffer_bytes	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	658;"	p	line:658	signature:(unsigned int8 stream)
+rcv_buffer_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	655;"	p	line:655	signature:(void)
+rcv_buffer_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	656;"	p	line:656	signature:(unsigned int8 stream)
+read_adc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	356;"	p	line:356	signature:(void)
+read_adc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	357;"	p	line:357	signature:(unsigned int8 mode)
+read_configuration_memory	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	782;"	p	line:782	signature:(unsigned int8* dataptr, unsigned int8 count)
+read_program_memory	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	779;"	p	line:779	signature:(__ADDRESS__ address, unsigned int8* dataptr, unsigned int16 count)
+reset_cpu	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	156;"	p	line:156	signature:(void)
+restart_cause	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	155;"	p	line:155	signature:(void)
+restart_wdt	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	128;"	p	line:128	signature:(void)
+rotate_left	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	599;"	p	line:599	signature:(unsigned int8* address, unsigned int8 bytes)
+rotate_right	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	600;"	p	line:600	signature:(unsigned int8* address, unsigned int8 bytes)
+rtc_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	542;"	p	line:542	signature:(rtc_time_t *time)
+rtc_read_alarm	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	544;"	p	line:544	signature:(rtc_time_t *time)
+rtc_time_t	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	538;"	t	line:538
+rtc_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	543;"	p	line:543	signature:(rtc_time_t *time)
+rtc_write_alarm	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	545;"	p	line:545	signature:(rtc_time_t *time)
+rtos_await	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	723;"	p	line:723	signature:(int1 flag)
+rtos_disable	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	721;"	p	line:721	signature:(unsigned int8 task)
+rtos_enable	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	720;"	p	line:720	signature:(unsigned int8 task)
+rtos_msg_poll	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	728;"	p	line:728	signature:(void)
+rtos_msg_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	727;"	p	line:727	signature:(void)
+rtos_msg_send	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	726;"	p	line:726	signature:(unsigned int8 task, unsigned int8 msg)
+rtos_overrun	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	729;"	p	line:729	signature:(unsigned int8 task)
+rtos_run	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	718;"	p	line:718	signature:(void)
+rtos_signal	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	725;"	p	line:725	signature:(unsigned int8 sem)
+rtos_stats	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	730;"	p	line:730	signature:(unsigned int8 task, unsigned int8* stat)
+rtos_terminate	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	722;"	p	line:722	signature:(void)
+rtos_wait	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	724;"	p	line:724	signature:(unsigned int8 sem)
+rtos_yield	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	719;"	p	line:719	signature:(void)
+sAN0::0x00000001	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	391;"	d	line:391
+sAN10::0x00000400	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	398;"	d	line:398
+sAN11::0x00000800	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	399;"	d	line:399
+sAN12::0x00001000	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	400;"	d	line:400
+sAN1::0x00000002	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	392;"	d	line:392
+sAN2::0x00000004	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	393;"	d	line:393
+sAN3::0x00000008	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	394;"	d	line:394
+sAN4::0x00000010	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	395;"	d	line:395
+sAN5::0x00000020	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	396;"	d	line:396
+sAN9::0x00000200	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	397;"	d	line:397
+set_adc_channel	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	355;"	p	line:355	signature:(unsigned int8)
+set_compare_time	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	263;"	p	line:263	signature:(unsigned int8 module, unsigned int16 ocr)
+set_compare_time	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	264;"	p	line:264	signature:(unsigned int8 module, unsigned int16 ocr, unsigned int16 ocrs)
+set_pulldown	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	56;"	p	line:56	signature:(int1 state)
+set_pulldown	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	57;"	p	line:57	signature:(int1 state, unsigned int16 pin)
+set_pullup	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	54;"	p	line:54	signature:(int1 state)
+set_pullup	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	55;"	p	line:55	signature:(int1 state, unsigned int16 pin)
+set_pwm_duty	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	262;"	p	line:262	signature:(unsigned int8 module, unsigned int16 duty)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	741;"	p	line:741	signature:(unsigned int8 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	742;"	p	line:742	signature:(unsigned int16 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	743;"	p	line:743	signature:(unsigned int32 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	744;"	p	line:744	signature:(unsigned int64 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	745;"	p	line:745	signature:(unsigned int8 stream, unsigned int8 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	746;"	p	line:746	signature:(unsigned int8 stream, unsigned int16 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	747;"	p	line:747	signature:(unsigned int8 stream, unsigned int32 value)
+set_ticks	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	748;"	p	line:748	signature:(unsigned int8 stream, unsigned int64 value)
+set_timer1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	190;"	p	line:190	signature:(unsigned int16 value)
+set_timer2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	194;"	p	line:194	signature:(unsigned int16 value)
+set_timer23	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	200;"	p	line:200	signature:(unsigned int32 value)
+set_timer3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	198;"	p	line:198	signature:(unsigned int16 value)
+set_timer4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	204;"	p	line:204	signature:(unsigned int16 value)
+set_timer45	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	210;"	p	line:210	signature:(unsigned int32 value)
+set_timer5	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	208;"	p	line:208	signature:(unsigned int16 value)
+set_tris_a	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	44;"	p	line:44	signature:(unsigned int16 value)
+set_tris_b	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	45;"	p	line:45	signature:(unsigned int16 value)
+set_uart_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	111;"	p	line:111	signature:(unsigned int32 baud)
+set_uart_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	112;"	p	line:112	signature:(unsigned int32 baud, unsigned int8 stream)
+set_uart_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	113;"	p	line:113	signature:(unsigned int32 baud, unsigned int8 stream, unsigned int32 clock)
+setup_adc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	352;"	p	line:352	signature:(unsigned int32 mode)
+setup_adc_ports	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	353;"	p	line:353	signature:(unsigned int32 pins)
+setup_adc_ports	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	354;"	p	line:354	signature:(unsigned int32 pins, unsigned int16 reference)
+setup_capture	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	232;"	p	line:232	signature:(unsigned int8 module, unsigned int16 mode)
+setup_comparator	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	412;"	p	line:412	signature:(unsigned int16 mode)
+setup_compare	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	261;"	p	line:261	signature:(unsigned int8 module, unsigned int16 mode)
+setup_crc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	517;"	p	line:517	signature:(unsigned int8 poly_terms, ...)
+setup_oscillator	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	174;"	p	line:174	signature:(unsigned int8 type, unsigned int32 target)
+setup_oscillator	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	175;"	p	line:175	signature:(unsigned int8 type, unsigned int32 target, unsigned int32 source)
+setup_pmp	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	453;"	p	line:453	signature:(unsigned int32 mode, unsigned int16 address_mask)
+setup_psp	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	460;"	p	line:460	signature:(unsigned int32 mode, unsigned int16 address_mask)
+setup_rtc	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	540;"	p	line:540	signature:(unsigned int16 mode, unsigned int8 calibration)
+setup_rtc_alarm	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	541;"	p	line:541	signature:(unsigned int16 mode, unsigned int16 mask, unsigned int8 repeat)
+setup_spi	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	286;"	p	line:286	signature:(unsigned int16 mode)
+setup_spi2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	291;"	p	line:291	signature:(unsigned int16 mode)
+setup_timer1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	187;"	p	line:187	signature:(unsigned int16 mode)
+setup_timer1	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	188;"	p	line:188	signature:(unsigned int16 mode, unsigned int16 period)
+setup_timer2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	191;"	p	line:191	signature:(unsigned int16 mode)
+setup_timer2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	192;"	p	line:192	signature:(unsigned int16 mode, unsigned int16 period)
+setup_timer3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	195;"	p	line:195	signature:(unsigned int16 mode)
+setup_timer3	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	196;"	p	line:196	signature:(unsigned int16 mode, unsigned int16 period)
+setup_timer4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	201;"	p	line:201	signature:(unsigned int16 mode)
+setup_timer4	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	202;"	p	line:202	signature:(unsigned int16 mode, unsigned int16 period)
+setup_timer5	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	205;"	p	line:205	signature:(unsigned int16 mode)
+setup_timer5	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	206;"	p	line:206	signature:(unsigned int16 mode, unsigned int16 period)
+setup_uart	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	108;"	p	line:108	signature:(unsigned int32 baud)
+setup_uart	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	109;"	p	line:109	signature:(unsigned int32 baud, unsigned int8 stream)
+setup_uart	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	110;"	p	line:110	signature:(unsigned int32 baud, unsigned int8 stream, unsigned int32 clock)
+setup_vref	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	435;"	p	line:435	signature:(unsigned int16 mode)
+setup_wdt	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	127;"	p	line:127	signature:(unsigned int8 mode)
+shift_left	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	597;"	p	line:597	signature:(unsigned int8* address, unsigned int8 bytes, int1 value)
+shift_right	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	598;"	p	line:598	signature:(unsigned int8* address, unsigned int8 bytes, int1 value)
+sleep	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	157;"	p	line:157	signature:(void)
+sleep	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	158;"	p	line:158	signature:(unsigned int8 mode)
+spi_data_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	290;"	p	line:290	signature:(void)
+spi_data_in2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	295;"	p	line:295	signature:(void)
+spi_init	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	696;"	p	line:696	signature:(unsigned int32 baud)
+spi_init	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	697;"	p	line:697	signature:(unsigned int8 stream, unsigned int32 baud)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	701;"	p	line:701	signature:(unsigned int8 data)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	702;"	p	line:702	signature:(unsigned int16 data)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	703;"	p	line:703	signature:(unsigned int32 data)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	704;"	p	line:704	signature:(unsigned int8, unsigned int8 data)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	705;"	p	line:705	signature:(unsigned int8, unsigned int16 data)
+spi_prewrite	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	706;"	p	line:706	signature:(unsigned int8, unsigned int32 data)
+spi_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	288;"	p	line:288	signature:(void)
+spi_read	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	289;"	p	line:289	signature:(unsigned int8 data)
+spi_read2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	293;"	p	line:293	signature:(void)
+spi_read2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	294;"	p	line:294	signature:(unsigned int8 data)
+spi_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	698;"	p	line:698	signature:(unsigned int32 baud)
+spi_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	699;"	p	line:699	signature:(unsigned int8 stream, unsigned int32 baud)
+spi_speed	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	700;"	p	line:700	signature:(unsigned int8 stream, unsigned int32 baud, unsigned int32 clock)
+spi_write	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	287;"	p	line:287	signature:(unsigned int8 data)
+spi_write2	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	292;"	p	line:292	signature:(unsigned int8 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	684;"	p	line:684	signature:(void)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	685;"	p	line:685	signature:(void)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	686;"	p	line:686	signature:(void)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	687;"	p	line:687	signature:(unsigned int8 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	688;"	p	line:688	signature:(unsigned int16 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	689;"	p	line:689	signature:(unsigned int32 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	690;"	p	line:690	signature:(unsigned int8 stream, unsigned int8 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	691;"	p	line:691	signature:(unsigned int8 stream, unsigned int16 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	692;"	p	line:692	signature:(unsigned int8 stream, unsigned int32 data)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	693;"	p	line:693	signature:(unsigned int8 stream, unsigned int8 data, unsigned int8 bits)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	694;"	p	line:694	signature:(unsigned int8 stream, unsigned int16 data, unsigned int8 bits)
+spi_xfer	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	695;"	p	line:695	signature:(unsigned int8 stream, unsigned int32 data, unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	707;"	p	line:707	signature:(void)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	708;"	p	line:708	signature:(void)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	709;"	p	line:709	signature:(void)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	710;"	p	line:710	signature:(unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	711;"	p	line:711	signature:(unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	712;"	p	line:712	signature:(unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	713;"	p	line:713	signature:(unsigned int8 stream, unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	714;"	p	line:714	signature:(unsigned int8 stream, unsigned int8 bits)
+spi_xfer_in	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	715;"	p	line:715	signature:(unsigned int8 stream, unsigned int8 bits)
+strcopy	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	592;"	p	line:592	signature:(char* dest, char* src)
+strcpy	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	591;"	p	line:591	signature:(char* dest, char* src)
+swap	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	601;"	p	line:601	signature:(unsigned int8 value)
+tm_hour	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	533;"	m	line:533
+tm_isdst	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	537;"	m	line:537
+tm_mday	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	531;"	m	line:531
+tm_min	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	536;"	m	line:536
+tm_mon	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	532;"	m	line:532
+tm_sec	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	535;"	m	line:535
+tm_temp	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	530;"	m	line:530
+tm_wday	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	534;"	m	line:534
+tm_year	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	529;"	m	line:529
+tx_buffer_bytes	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	661;"	p	line:661	signature:(void)
+tx_buffer_bytes	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	662;"	p	line:662	signature:(unsigned int8 stream)
+tx_buffer_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	659;"	p	line:659	signature:(void)
+tx_buffer_full	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	660;"	p	line:660	signature:(unsigned int8 stream)
+write_configuration_memory	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	783;"	p	line:783	signature:(unsigned int8* dataptr, unsigned int8 count)
+write_program_memory	D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\01_TIMER\24FJ48GA002.h	781;"	p	line:781	signature:(__ADDRESS__ address, unsigned int8* dataptr, unsigned int16 count)

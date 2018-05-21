@@ -1,0 +1,78 @@
+
+ROM used:   3612/33788 (11%)
+            3612/33788 (11%) including unused fragments
+
+            0.8 Average locations per line
+            4.0 Average locations per statement
+
+RAM used:   310/8192 (4%) at main() level
+            364/8192 (4%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  455   217  24  QuadEncoder2.c
+  104     0   0  QuadEncoder.h
+  102     0   0  CONFIG_PIC24.H
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  57  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  15  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   1  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   32     0   0  BL_support.h
+   37     0   0  CDATPIC24.H
+  157    24   3  PID_Control_LIB.c
+  144     0   0  BITWISE_LIB.h
+----- -----
+ 4332   912 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     68   1    8             @DIV3232B
+0     66   1    8             @MULS3232
+0    264   4    8             @DIVFF64
+0     48   1    8             @MUL3232
+0    336   5    5   699  7.0  main
+0    194   3   14   410  6.4  Position_control
+0    100   1    0             @I64TOF64
+0     86   1    0             @F64TOI64
+0    358   5   20   847  5.8  control_PID
+0    168   2    6   984  5.8  motor_drive
+0     10   0    0    21  0.9  DisableIntr
+0      8   0    0    21  0.9  EnableIntr
+0     80   1    0   884  2.9  GlobalVarInit
+0    160   2    3  1226  4.9  HardwareInit
+0    314   4    5  1894  7.9  Timer4ISR
+0    314   4    5  1894  7.9  Timer5ISR
+0    216   3    0   449  4.3  Timer3ISR
+0     38   1    0             @const1242
+0    276   4    0             @PRINTFD32_115200_5725_5724
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               11
+    Statements              912
+    Comments                262
+    Volume (V)              13833
+    Difficulty (D)          55.1
+    Effort to implement (E) 762615
+    Time to implement (T)   11 hours, 46 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   38
+    Maintainability (MI)    109
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  3104  27104  
+
+
+

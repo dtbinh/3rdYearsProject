@@ -1,0 +1,196 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W2  @MULFF48.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W3  @SI64TOF48.P3
+W0 -W2  @DIVS4848.P4
+W0 -W2  @DIVFF48.P5
+W0 -W1  @DIV3232B.P6
+W0 -W2  @ADDFF48.P7
+W0 -W3  @ADDFF64.P8
+W0      @delay_ms1.P9
+W0 -W1  @MUL3232.P10
+W0 -W1  @DIVS3232A.P11
+W0      @delay_us1.P12
+W0 -W1  @ADDFF.P13
+W0 -W1  @MULS3232.P14
+W0 -W1  @DIVFF.P15
+W0 -W1  @MULFF.P16
+W0 -W3  @MULFF64.P17
+W0 -W3  @DIVFF64.P18
+W0 -W3  @SI64TOF64.P19
+W0      @PRINTFU16_9600_5725_5724.P20
+W0      @PRINTFD16_9600_5725_5724.P21
+W0 -W3  @MULS6464.P22
+W0      @SITOF.P23
+W0 -W2  @MULS4848.P24
+W0 -W3  @DIVS6464.P25
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2      @READ_PACKED_MEMORY.P1
+W2 -W3  @DIVS3232A.P2
+W2 -W3  @ADDFF.P3
+W2 -W3  @DIV3232B.P4
+W2 -W3  @MULFF.P5
+W2 -W3  @MULS3232.P6
+W2      @READ_ROM_MEMORY.P7
+W2 -W3  @MUL3232.P8
+W2 -W3  @DIVFF.P9
+W2      @WRITE_PACKED_MEMORY.P10
+W3 -W5  @DIVS4848.P1
+W3      @READ_PACKED_MEMORY.P2
+W3 -W5  @MULS4848.P3
+W3 -W5  @ADDFF48.P4
+W3 -W5  @DIVFF48.P5
+W3      @READ_ROM_MEMORY.P6
+W3 -W5  @MULFF48.P7
+W3      @WRITE_PACKED_MEMORY.P8
+W4 -W7  @DIVFF64.P1
+W4      @PRINTFD16_9600_5725_5724.P2
+W4      @PRINTFU16_9600_5725_5724.P3
+W4 -W7  @MULFF64.P4
+W4 -W7  @DIVS6464.P5
+W4 -W7  @MULS6464.P6
+W4 -W7  @ADDFF64.P7
+630.6   C1OUT
+630.7   C2OUT
+800-801 rs232_errors
+802.0   _sw_active
+802.1   _beep_playing
+802.2   _beep_updated
+802.3   t1_isr_flag
+802.4   u1_isr_flag
+802.5   frame_received_flag
+803     _sw_on_id
+804     _sw_state
+805     _sw_ticks
+806     Switch_Service.hold_cnt
+807     Switch_Service.prv_id
+808     Switch_Service.rep_ticks
+809     _beep_tone
+80A     _beep_power
+80B     buffer_index
+80C-80D _beep_period
+80E-80F _beep_ticks
+810-811 _beep_tmrval
+812-813 _beep_pwmval
+814-81B _adc_value
+81C-81D _ach_ch_idx
+81E-81F strtok.save
+820-823 _Randseed
+824-825 t1_ticks
+826-827 u1_isr_cnt
+828-829 u1_buff_put
+82A-82B u1_buff_get
+82C-82D u1_buff_cnt
+82E-86D u1_buffer
+86E-87D buffer_receive
+87E-88D buffer_output
+88E     Data_Processing.state
+890-891 MAIN.counter
+892-893 MAIN.cnt
+894-895 MAIN.d_cnt
+896-897 MAIN.s_ticks
+898-899 MAIN.e_ticks
+89A-89B MAIN.adc0
+89C-89D MAIN.adc1
+89E-89F MAIN.adc2
+8A0-8A1 MAIN.adc3
+8A2-8A9 MAIN.tone
+8AA-8AB MAIN.id
+8AC     MAIN.c
+8AE-8AF MAIN.value
+8BE     ADC_Read.ch
+8BE     U1QGet.c
+8BE-8BF System_Init.tris_a
+8BE     Data_Processing.c
+8BE-8BF atoi.s
+8BE     PSW_GetId.ret
+8BE     LED_Write.d
+8C0-8C1 Data_Processing.i
+8C0-8C1 atoi.result
+8C0-8C1 System_Init.port_a
+8C2-8C3 atoi.sign
+8C2     Beep_SetTone.tone
+8C2-8C3 System_Init.tris_b
+8C4-8C5 atoi.base
+8C4-8C5 System_Init.port_b
+8C6-8C7 atoi.index
+8C8     atoi.c
+8E2     Switch_Service.d
+8E3     Switch_Service.cur_id
+8E4-8E5 Switch_Service.i
+8E4     UART1_Isr.c
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const1164.call
+000E1A  @const1206.call
+000E36  @const1208.call
+000E4E  Beep_Service
+000E72  Switch_Service
+000F36  ADC_Service
+000F6A  TIMER1_ISR
+000F9A  UART1_Isr
+000FE6  @delay_ms1
+000FF6  Beep_Update
+001026  Beep_Start
+00105C  Beep
+001062  System_Init
+001108  LED_Write
+001152  ADC_Read
+001174  @PRINTFD16_9600_5725_5724
+00126A  PSW_Check
+00127E  PSW_GetId
+00128E  Beep_SetTone
+0012A2  U1QGet
+0012D8  Data_Processing
+00135E  atoi
+0014FA  @PRINTFU16_9600_5725_5724
+0015AC  @cinit1
+0015AC  MAIN
+00164A  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\Lec\Fibo\Board_Support\Tester\Tester.X\
+
+Project Files:
+    tester.c                                                [01-Nov-16 06:37  CRC=0F00820E]
+    System.h                                                [01-Nov-16 06:07  CRC=F80F7500]
+    ..\..\..\..\..\Program Files (x86)\PICC\devices\24FJ48GA002.h [12-Nov-13 14:36  CRC=2B092578]
+    BL_Support.h                                            [01-Nov-16 06:21  CRC=2918F78D]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h [31-Jul-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [14-Jul-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h [08-Jun-11 14:39  CRC=0B6669CF]
+
+Source signature=9ACDF73F
+
+Units:
+    tester (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Predefined symbols:
+       #define __PIC24FJ48GA002__ 1
+
+Output Files:
+    XREF file:   build\default\production\tester.xsym
+    Errors:      build\default\production\tester.err
+    Ext Symbols: build\default\production\tester.esym
+    INHX8:       build\default\production\tester.hex
+    Symbols:     build\default\production\tester.sym
+    List:        build\default\production\tester.lst
+    Debug/COFF:  build\default\production\tester.cof
+    Project:     tester.ccspjt
+    Call Tree:   build\default\production\tester.tre
+    Statistics:  build\default\production\tester.STA

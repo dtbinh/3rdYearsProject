@@ -1,0 +1,26 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\DEMO_BITWISE\PIC24_DEMO_BITWISE.o
+Folder=Intermediary
+[File001]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\Project\DEMO_BITWISE\BITWISE_LIB.o
+Folder=Intermediary
+[File002]
+Location=PIC24_DEMO_BITWISE.HEX
+Folder=Output
+[File003]
+Location=PIC24_DEMO_BITWISE.LST
+Folder=Output
+[File004]
+Location=PIC24_DEMO_BITWISE.ERR
+Folder=Output
+[File005]
+Location=PIC24_DEMO_BITWISE.COF
+Folder=Output
+[File006]
+Location=BITWISE_LIB.ERR
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

@@ -1,0 +1,48 @@
+ÀÄQuadEncoder2
+   ÃÄmain  0/140  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄDisableIntr  0/10  Ram=0
+   ³  ÃÄGlobalVarInit  0/100  Ram=0
+   ³  ÃÄHardwareInit  0/160  Ram=3
+   ³  ÀÄEnableIntr  0/8  Ram=0
+   ÃÄTimer4ISR  0/314  Ram=5
+   ÃÄTimer5ISR  0/314  Ram=5
+   ÀÄTimer3ISR  0/242  Ram=5
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÃÄ@MUL3232  0/48  Ram=8
+      ³  ÃÄ@MUL3232  0/48  Ram=8
+      ³  ÃÄ@I64TOF64  0/100  Ram=0
+      ³  ÃÄ@DIVFF64  0/264  Ram=8
+      ³  ÃÄ@F64TOI64  0/86  Ram=0
+      ³  ÃÄcontrol_PID  0/478  Ram=22
+      ³  ³  ÃÄ@ADDFF  0/426  Ram=8
+      ³  ³  ÃÄ@ADDFF  0/426  Ram=8
+      ³  ³  ÃÄ@SDTOF  0/78  Ram=4
+      ³  ³  ÃÄ@MULFF  0/196  Ram=8
+      ³  ³  ÃÄ@MULFF  0/196  Ram=8
+      ³  ³  ÃÄ@ADDFF  0/426  Ram=8
+      ³  ³  ÃÄ@SDTOF  0/78  Ram=4
+      ³  ³  ÃÄ@MULFF  0/196  Ram=8
+      ³  ³  ÃÄ@ADDFF  0/426  Ram=8
+      ³  ³  ÃÄ@SDTOF  0/78  Ram=4
+      ³  ³  ÃÄ@MULFF  0/196  Ram=8
+      ³  ³  ÃÄ@ADDFF  0/426  Ram=8
+      ³  ³  ÃÄ@FTOSD  0/64  Ram=4
+      ³  ³  ÃÄmotor_drive  0/168  Ram=6
+      ³  ³  ÀÄmotor_drive  0/168  Ram=6
+      ³  ÀÄcontrol_PID  0/478  Ram=22
+      ³     ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÃÄPosition_control  0/194  Ram=14
+      ³  ÀÄ*
+      ÀÄPosition_control  0/194  Ram=14
+         ÀÄ*

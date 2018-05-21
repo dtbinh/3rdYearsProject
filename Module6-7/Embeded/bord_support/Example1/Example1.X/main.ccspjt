@@ -1,0 +1,16 @@
+[PROJECT]
+Target=build\default\production\main.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=build\default\production\main.c
+[Directories]
+Include=D:\Program Files (x86)\PICC\devices\;D:\Program Files (x86)\PICC\drivers\
+[build\default\production\main.c]
+Type=4
+[mru-list]
+1=build\default\production\main.c
+[Units]
+Count=1
+1=main (main)

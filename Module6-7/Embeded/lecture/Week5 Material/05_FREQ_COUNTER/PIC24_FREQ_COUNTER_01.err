@@ -1,0 +1,3 @@
+>>> Warning 202 "PIC24_FREQ_COUNTER_01.c" Line 98(8,10): Variable never used:   sw
+D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\05_FREQ_COUNTER\PIC24_FREQ_COUNTER_01.o ===>  0 Errors,  1 Warnings.
+Build Successful.

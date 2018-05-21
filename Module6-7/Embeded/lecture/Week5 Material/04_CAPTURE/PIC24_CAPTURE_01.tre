@@ -1,0 +1,8 @@
+ÀÄPIC24_CAPTURE_01
+   ÃÄmain  0/162  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄHardwareInit  0/70  Ram=3
+   ³  ÃÄ@const1174  0/34  Ram=0
+   ³  ÀÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0
+   ÃÄIC2ISR  0/48  Ram=0
+   ÀÄTmr5ISR  0/34  Ram=0

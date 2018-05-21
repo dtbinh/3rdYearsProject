@@ -1,0 +1,75 @@
+
+ROM used:   3108/33788 (9%)
+            3108/33788 (9%) including unused fragments
+
+            0.9 Average locations per line
+            4.0 Average locations per statement
+
+RAM used:   292/8192 (4%) at main() level
+            358/8192 (4%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  266   120  15  tester.c
+  436   139  18  System.h
+  862     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\24FJ48GA002.h
+   32     0   0  BL_Support.h
+   37     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdio.h
+  423     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 1351   524  67  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+----- -----
+ 3467   783 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   0    2             @delay_ms1
+0     74   1    1   199  2.7  LED_Write
+0    196   3    3  1517 11.4  Switch_Service
+0     20   0    2    76  2.7  PSW_Check
+0     16   0    1    83  1.9  PSW_GetId
+0     36   1    2   196  4.9  Beep_Service
+0     48   1    3   133  3.9  Beep_Update
+0     20   0    1    81  2.9  Beep_SetTone
+0     54   1    2   364  5.6  Beep_Start
+0      6   0    0    16  1.0  Beep
+0     52   1    5   116  3.8  ADC_Service
+0     34   1    4   246  4.6  ADC_Read
+0    412   7   15  1815 10.5  atoi
+0    166   3    5   820  4.5  System_Init
+0     30   0    0             @const1164
+0     48   1    0    72  1.9  TIMER1_ISR
+0     76   1    6   169  4.0  UART1_Isr
+0     54   1    4   202  5.5  U1QGet
+0    134   2    4   705  7.3  Data_Processing
+0    632  10   21  1792  6.8  MAIN
+0    246   4    0             @PRINTFD16_9600_5725_5724
+0     28   0    0             @const1206
+0     24   0    0             @const1208
+0    178   3    0             @PRINTFU16_9600_5725_5724
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              783
+    Comments                827
+    Volume (V)              13549
+    Difficulty (D)          89.8
+    Effort to implement (E) 1216173
+    Time to implement (T)   18 hours, 46 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   45
+    Maintainability (MI)    31
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA  2600  27608  
+
+
+

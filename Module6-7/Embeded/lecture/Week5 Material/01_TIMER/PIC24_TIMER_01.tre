@@ -1,0 +1,6 @@
+ÀÄPIC24_TIMER_01
+   ÃÄmain  0/120  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄHardwareInit  0/48  Ram=3
+   ³  ÀÄ@const1170  0/22  Ram=0
+   ÀÄTmr1ISR  0/34  Ram=0

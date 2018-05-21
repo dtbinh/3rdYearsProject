@@ -1,0 +1,18 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=main.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+[Units]
+Count=2
+1=QuadEncoder2
+2=PID_Control_LIB
+Link=1

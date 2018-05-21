@@ -1,0 +1,65 @@
+
+ROM used:   1148/33788 (3%)
+            1148/33788 (3%) including unused fragments
+
+            0.3 Average locations per line
+            1.6 Average locations per statement
+
+RAM used:   143/8192 (2%) at main() level
+            148/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  158    37   5  PIC24_DEMO_BITWISE.c
+   77     0   0  PIC24_DEMO_BITWISE.H
+  104     0   0  CONFIG_PIC24.h
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  72  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  18  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   2  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   37     0   0  CDATPIC24.h
+  144     0   0  BITWISE_LIB.h
+  157    24   3  BITWISE_LIB.c
+----- -----
+ 3978   732 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    436  19    7  1553  6.9  main
+0     26   1    3   115  2.5  HardwareInit
+0     20   1    4   115  3.6  BitSet
+0     22   1    4   125  4.0  BitClear
+0     32   1    7   130  4.3  BitTest
+0     32   1    9   122  4.2  BitSetP
+0     34   1    9   133  4.7  BitClearP
+0     34   1    9   159  4.9  BitTestP
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               8
+    Statements              732
+    Comments                323
+    Volume (V)              3453
+    Difficulty (D)          36.6
+    Effort to implement (E) 126418
+    Time to implement (T)   1 hours, 57 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   6
+    Maintainability (MI)    46
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-083FA   636  32640  
+
+
+

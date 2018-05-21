@@ -1,0 +1,9 @@
+ÀÄFrequenct_counter
+   ÃÄmain  0/176  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄHardwareInit  0/86  Ram=3
+   ³  ÃÄ@const1218  0/28  Ram=0
+   ³  ÃÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0
+   ³  ÀÄ@const1218  0/28  Ram=0
+   ÃÄOC1ISR  0/56  Ram=0
+   ÀÄTmr5ISR  0/34  Ram=0

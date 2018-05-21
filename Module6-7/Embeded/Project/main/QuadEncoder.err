@@ -1,0 +1,5 @@
+>>> Warning 202 "QuadEncoder.c" Line 138(8,9): Variable never used:   c
+>>> Warning 202 "QuadEncoder.c" Line 138(15,16): Variable never used:   d
+      Memory usage:   ROM=14%      RAM=4% - 5%
+      0 Errors,  2 Warnings.
+Build Successful.

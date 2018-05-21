@@ -1,0 +1,14 @@
+ÀÄADC
+   ÃÄmain  0/140  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄHardwareInit  0/62  Ram=3
+   ³  ÀÄMovingAvgInit  0/34  Ram=0
+   ³     ÃÄInitMvgAvg  0/86  Ram=11
+   ³     ÀÄInitMvgAvg  0/86  Ram=11
+   ÀÄTmr3ISR  0/214  Ram=0
+      ÃÄMovingAvg  0/254  Ram=14
+      ÃÄMovingAvg  0/254  Ram=14
+      ÃÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0
+      ÃÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0
+      ÃÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0
+      ÀÄ@PRINTFU16_115200_5725_5724  0/178  Ram=0

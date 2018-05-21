@@ -1,0 +1,64 @@
+
+ROM used:   1480/33788 (4%)
+            1480/33788 (4%) including unused fragments
+
+            0.4 Average locations per line
+            2.0 Average locations per statement
+
+RAM used:   176/8192 (2%) at main() level
+            196/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  158    32   4  PIC24_ADC_01.c
+   87     0   0  PIC24_ADC_01.H
+  104     0   0  CONFIG_PIC24.h
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  72  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  18  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   2  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   37     0   0  CDATPIC24.h
+   99     0   0  MOVING_AVG_LIB.h
+  134    22   3  MOVING_AVG_LIB.c
+----- -----
+ 3920   725 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    140   5    0    98  2.0  main
+0     62   2    3   396  3.3  HardwareInit
+0     34   1    0    94  2.5  MovingAvgInit
+0    214   7    0   277  3.1  Tmr3ISR
+0    178   6    0             @PRINTFU16_115200_5725_5724
+0     86   3   11   362  5.6  InitMvgAvg
+0    254   9   14   805  8.2  MovingAvg
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               6
+    Statements              725
+    Comments                242
+    Volume (V)              2910
+    Difficulty (D)          24.7
+    Effort to implement (E) 71980
+    Time to implement (T)   1 hours, 7 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   4
+    Maintainability (MI)    41
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-083FA   968  32308  
+
+
+

@@ -1,0 +1,197 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W1  @PRINTFD32_115200_5725_5724.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W3  @DIVS6464.P3
+W0 -W1  @MULS3232.P4
+W0      @delay_us1.P5
+W0 -W1  @DIV3232B.P6
+W0 -W2  @DIVFF48.P7
+W0 -W3  @ADDFF64.P8
+W0 -W3  @F64TOI64.P9
+W0 -W1  @SDTOF.P10
+W0 -W1  @MULFF.P11
+W0 -W3  @DIVFF64.P12
+W0      @SITOF.P13
+W0 -W3  @MULS6464.P14
+W0 -W2  @MULFF48.P15
+W0 -W3  @MULFF64.P16
+W0      @delay_ms1.P17
+W0 -W3  @SI64TOF48.P18
+W0 -W2  @MULS4848.P19
+W0 -W1  @MUL3232.P20
+W0 -W3  @I64TOF64.P21
+W0 -W2  @ADDFF48.P22
+W0 -W3  @SI64TOF64.P23
+W0 -W2  @DIVS4848.P24
+W0 -W1  @ADDFF.P25
+W0 -W1  @FTOSD.P26
+W0 -W1  @DIVFF.P27
+W0 -W1  @DIVS3232A.P28
+W1      @SCRATCH
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2      @READ_PACKED_MEMORY.P1
+W2 -W3  @DIVFF.P2
+W2 -W3  @MUL3232.P3
+W2 -W3  @DIV3232B.P4
+W2      @READ_ROM_MEMORY.P5
+W2      @WRITE_PACKED_MEMORY.P6
+W2 -W3  @ADDFF.P7
+W2 -W3  @MULFF.P8
+W2 -W3  @DIVS3232A.P9
+W2 -W3  @MULS3232.P10
+W3      @READ_PACKED_MEMORY.P1
+W3      @READ_ROM_MEMORY.P2
+W3 -W5  @DIVFF48.P3
+W3      @WRITE_PACKED_MEMORY.P4
+W3 -W5  @ADDFF48.P5
+W3 -W5  @MULFF48.P6
+W3 -W5  @MULS4848.P7
+W3 -W5  @DIVS4848.P8
+W4 -W7  @MULFF64.P1
+W4 -W7  @DIVFF64.P2
+W4 -W7  @DIVS6464.P3
+W4 -W7  @MULS6464.P4
+W4 -W7  @ADDFF64.P5
+W4      @PRINTFD32_115200_5725_5724.P6
+085.4   TX1IF
+630.6   C1OUT
+630.7   C2OUT
+800-801 strtok.save
+802-805 _Randseed
+806-807 __DYNAMIC_HEAD
+808-80B SamplingCounterAX0
+80C-80F SamplingCounterAX1
+810-813 SamplingCounterAX2
+814-817 SamplingCounterAX3
+818-819 ReadPortA
+81A-81B ReadPortB
+81C-81D AX0_Old
+81E-81F AX1_Old
+820-821 AX2_Old
+822-823 AX3_Old
+824-825 AX0_New_Actual
+826-827 AX1_New_Actual
+828-829 AX2_New_Actual
+82A-82B AX3_New_Actual
+82C-831 AX0_New
+832-837 AX1_New
+838-83D AX2_New
+83E-843 AX3_New
+844     Rotate
+845     RotateX
+846     RotateY
+847     Axis
+848-849 Tmr3IntrCounter
+84A-84B Sampling
+84C-84F PulseCounterOld1
+850-853 PulseCounterNew1
+854-857 PulseCounterInterval1
+858-85B PulseCounter1
+85C-85F PulseCounterOld2
+860-863 PulseCounterNew2
+864-867 PulseCounterInterval2
+868-86B PulseCounter2
+86C-86F u_X
+870-873 e_X
+874-877 delta_u_X
+878-87B pu1_X
+87C-87F pe2_X
+880-883 pe1_X
+884-887 u_Y
+888-88B e_Y
+88C-88F delta_u_Y
+890-893 pu1_Y
+894-897 pe2_Y
+898-89B pe1_Y
+89C-89F r
+8A0-8A1 duty_X
+8A2-8A3 duty_Y
+8A4     state
+8A6-8A9 main.c
+8AA-8AD main.d
+8B0     Position_control.Axis
+8B2-8B5 Position_control.target
+8B6-8B9 Position_control.PulseCounter
+8C0     control_PID.Axis
+8C2-8C5 control_PID.y
+8C6-8C9 control_PID.r
+8CA-8CD control_PID.K_P
+8CE-8D1 control_PID.K_I
+8D2-8D5 control_PID.K_D
+8F0     motor_drive.Axis
+8F1     motor_drive.Rotate
+8F2-8F5 motor_drive.u
+2780-27FF Stack
+
+ROM Allocation:
+000DFC  @const1283.call
+000E22  Timer4ISR
+000F5C  Timer5ISR
+001096  @DIV3232B
+0010DA  @PRINTFD32_115200_5725_5724
+0011EE  Timer3ISR
+0012C6  DisableIntr
+0012D0  GlobalVarInit
+001318  HardwareInit
+0013B8  EnableIntr
+0013C0  @MUL3232
+0013F0  @I64TOF64
+001454  @DIVFF64
+00155C  @F64TOI64
+0015B2  @ADDFF
+00175C  @SDTOF
+0017AA  @MULFF
+00186E  @FTOSD
+0018AE  motor_drive
+001956  control_PID
+001BE2  Position_control
+001C92  main
+001C92  @cinit1
+001CD6  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    D:\chin\mine BCH project\Module6-7\Embeded\Project\main\
+
+Project Files:
+    QuadEncoder.c                                           [03-Nov-17 22:07  CRC=7F6DC919]
+    QuadEncoder.h                                           [03-Nov-17 17:11  CRC=05C6FF8B]
+    CONFIG_PIC24.H                                          [02-Nov-17 20:26  CRC=E70AB7EB]
+    C:\Program Files (x86)\PICC\devices\24FJ48GA002.H       [12-Nov-13 14:36  CRC=2B092578]
+    C:\Program Files (x86)\PICC\drivers\stdlib.h            [08-Jun-11 14:39  CRC=0B6669CF]
+    C:\Program Files (x86)\PICC\drivers\stddef.h            [16-Jul-10 09:27  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\drivers\string.h            [14-Jul-11 10:13  CRC=23EDEC8F]
+    C:\Program Files (x86)\PICC\drivers\ctype.h             [03-Jan-08 13:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\drivers\stdio.h             [31-Jul-07 13:24  CRC=4E4534F4]
+    C:\Program Files (x86)\PICC\drivers\stdlibm.h           [24-Feb-12 09:58  CRC=9523303D]
+    C:\Program Files (x86)\PICC\drivers\memmgmt.c           [24-Feb-12 09:47  CRC=E82E24A3]
+    C:\Program Files (x86)\PICC\drivers\stdint.h            [30-Dec-08 09:01  CRC=9F7F640F]
+    BL_support.h                                            [05-Jan-17 12:12  CRC=F46A39C9]
+    CDATPIC24.H                                             [25-Jul-17 17:34  CRC=DDB9FE05]
+
+Source signature=982D0E26
+
+Units:
+    QuadEncoder (main)
+
+Compiler Settings:
+    Processor:      PIC24FJ48GA002
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Case Sensitive: Yes
+
+Output Files:
+    Errors:      QuadEncoder.err
+    INHX8:       QuadEncoder.hex
+    Symbols:     QuadEncoder.sym
+    List:        QuadEncoder.lst
+    Debug/COFF:  QuadEncoder.cof
+    Project:     QuadEncoder.ccspjt
+    Call Tree:   QuadEncoder.tre
+    Statistics:  QuadEncoder.STA

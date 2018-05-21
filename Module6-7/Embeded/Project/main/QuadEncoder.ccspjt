@@ -1,0 +1,16 @@
+[PROJECT]
+Target=QuadEncoder.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=QuadEncoder.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[QuadEncoder.c]
+Type=4
+[mru-list]
+1=QuadEncoder.c
+[Units]
+Count=1
+1=QuadEncoder (main)

@@ -1,0 +1,5 @@
+>>> Warning 216 "D:\chin\mine BCH project\Module6-7\Embeded\Project\serial\$linker.c" Line 2(8,14): Interrupts disabled during call to prevent re-entrancy:  (malloc)
+>>> Warning 216 "D:\chin\mine BCH project\Module6-7\Embeded\Project\serial\$linker.c" Line 2(8,14): Interrupts disabled during call to prevent re-entrancy:  (free)
+      Memory usage:   ROM=7%      RAM=4% - 5%
+      0 Errors,  2 Warnings.
+Build Successful.

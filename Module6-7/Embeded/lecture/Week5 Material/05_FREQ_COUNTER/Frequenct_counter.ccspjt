@@ -1,0 +1,18 @@
+[PROJECT]
+Target=Frequenct_counter.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=Frequenct_counter.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[Frequenct_counter.c]
+Type=4
+[mru-list]
+1=Frequenct_counter.c
+[Units]
+Count=2
+1=BITWISE_LIB
+2=PIC24_FREQ_COUNTER_01
+Link=1

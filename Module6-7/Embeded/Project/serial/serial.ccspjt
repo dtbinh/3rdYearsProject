@@ -1,0 +1,18 @@
+[PROJECT]
+Target=serial.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=serial.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[serial.c]
+Type=4
+[mru-list]
+1=serial.c
+[Units]
+Count=2
+1=EVENT_DRIVEN_CCS
+2=PIC24_UART_INTERRUPT_01
+Link=1

@@ -1,0 +1,65 @@
+
+ROM used:   1066/33788 (3%)
+            1066/33788 (3%) including unused fragments
+
+            0.3 Average locations per line
+            1.5 Average locations per statement
+
+RAM used:   148/8192 (2%) at main() level
+            148/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  157    24   3  BITWISE_LIB.c
+  144     0   0  BITWISE_LIB.h
+  104     0   0  CONFIG_PIC24.H
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  71  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  18  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   2  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   32     0   0  BL_support.h
+   37     0   0  CDATPIC24.H
+  168    39   5  PIC24_FREQ_COUNTER_01.c
+   87     0   0  PIC24_FREQ_COUNTER_01.h
+----- -----
+ 4030   734 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    176   8    2   195  3.8  main
+0     28   1    0             @const1218
+0    178   8    0             @PRINTFU16_115200_5725_5724
+0     86   4    3   678  3.9  HardwareInit
+0     56   3    0   112  3.0  OC1ISR
+0     34   2    0    24  1.7  Tmr5ISR
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              734
+    Comments                260
+    Volume (V)              1303
+    Difficulty (D)          12.8
+    Effort to implement (E) 16659
+    Time to implement (T)   15 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   2
+    Maintainability (MI)    53
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00BFE     0  3072  
+00C00-00C02     4  0  
+00C04-00DFA   504  0  
+00DFC-083FA   558  29650  
+
+
+

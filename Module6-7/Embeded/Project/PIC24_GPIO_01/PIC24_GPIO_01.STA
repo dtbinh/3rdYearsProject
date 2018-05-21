@@ -1,0 +1,61 @@
+
+ROM used:   806/33788 (2%)
+            806/33788 (2%) including unused fragments
+
+            0.2 Average locations per line
+            1.1 Average locations per statement
+
+RAM used:   143/8192 (2%) at main() level
+            147/8192 (2%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+    3     0   0  $linker.c
+  153    35   5  PIC24_GPIO_01.c
+   77     0   0  PIC24_GPIO_01.H
+  104     0   0  CONFIG_PIC24.h
+  862     0   0  C:\Program Files (x86)\PICC\devices\24FJ48GA002.H
+ 1351   524  72  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  423     0   0  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   37     0   0  C:\Program Files (x86)\PICC\drivers\stdio.h
+  326   134  18  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   76    13   2  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  163     0   0  C:\Program Files (x86)\PICC\drivers\stdint.h
+   37     0   0  CDATPIC24.h
+  144     0   0  BITWISE_LIB.h
+  157    24   3  BITWISE_LIB.c
+----- -----
+ 3973   730 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    196  12    7   671  6.2  main
+0     32   2    3   179  2.2  HardwareInit
+0     32   2    7   130  4.3  BitTest
+0     34   2    9   159  4.9  BitTestP
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              730
+    Comments                253
+    Volume (V)              1519
+    Difficulty (D)          17.7
+    Effort to implement (E) 26900
+    Time to implement (T)   25 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   5
+    Maintainability (MI)    43
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-083FA   294  32982  
+
+
+

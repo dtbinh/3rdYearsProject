@@ -1,0 +1,20 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\02_COMPARE\PIC24_COMPARE_01.o
+Folder=Intermediary
+[File001]
+Location=PIC24_COMPARE_01.HEX
+Folder=Output
+[File002]
+Location=PIC24_COMPARE_01.LST
+Folder=Output
+[File003]
+Location=PIC24_COMPARE_01.ERR
+Folder=Output
+[File004]
+Location=PIC24_COMPARE_01.COF
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

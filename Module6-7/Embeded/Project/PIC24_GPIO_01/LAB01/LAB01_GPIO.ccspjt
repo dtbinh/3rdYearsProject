@@ -1,0 +1,18 @@
+[PROJECT]
+Target=LAB01_GPIO.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=LAB01_GPIO.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[LAB01_GPIO.c]
+Type=4
+[mru-list]
+1=LAB01_GPIO.c
+[Units]
+Count=2
+1=BITWISE_LIB
+2=LAB01_GPIO
+Link=1

@@ -1,0 +1,29 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\PIC24_ADC_01.o
+Folder=Intermediary
+[File001]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\MOVING_AVG_LIB.o
+Folder=Intermediary
+[File002]
+Location=PIC24_ADC_01.ERR
+Folder=Output
+[File003]
+Location=MOVING_AVG_LIB.ERR
+Folder=Output
+[File004]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\ADC.COF
+Folder=Output
+[File005]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\ADC.HEX
+Folder=Output
+[File006]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\ADC.LST
+Folder=Output
+[File007]
+Location=D:\chin\mine BCH project\Module6-7\Embeded\lecture\Week5 Material\06_ADC\ADC.ERR
+Folder=Output
+[TOOL_LOC_STAMPS]
+tool_loc{0C155615-B197-4A4B-AEB6-343BB3F41A35}=C:\Program Files (x86)\PICC\Ccsc.exe

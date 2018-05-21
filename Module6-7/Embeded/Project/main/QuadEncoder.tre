@@ -1,0 +1,56 @@
+ÀÄQuadEncoder
+   ÃÄmain  0/350  Ram=5
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄDisableIntr  0/10  Ram=0
+   ³  ÃÄGlobalVarInit  0/72  Ram=0
+   ³  ÃÄHardwareInit  0/160  Ram=3
+   ³  ÃÄEnableIntr  0/8  Ram=0
+   ³  ÃÄPosition_control  0/176  Ram=14
+   ³  ³  ÃÄ@MUL3232  0/48  Ram=8
+   ³  ³  ÃÄ@I64TOF64  0/100  Ram=0
+   ³  ³  ÃÄ@DIVFF64  0/264  Ram=8
+   ³  ³  ÃÄ@F64TOI64  0/86  Ram=0
+   ³  ³  ÀÄcontrol_PID  0/652  Ram=30
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@FTOSD  0/64  Ram=4
+   ³  ³     ÃÄmotor_drive  0/168  Ram=6
+   ³  ³     ÃÄmotor_drive  0/168  Ram=6
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@SDTOF  0/78  Ram=4
+   ³  ³     ÃÄ@MULFF  0/196  Ram=8
+   ³  ³     ÃÄ@ADDFF  0/426  Ram=8
+   ³  ³     ÃÄ@FTOSD  0/64  Ram=4
+   ³  ³     ÃÄmotor_drive  0/168  Ram=6
+   ³  ³     ÀÄmotor_drive  0/168  Ram=6
+   ³  ÀÄPosition_control  0/176  Ram=14
+   ³     ÀÄ*
+   ÃÄTimer4ISR  0/314  Ram=5
+   ÃÄTimer5ISR  0/314  Ram=5
+   ÀÄTimer3ISR  0/216  Ram=0
+      ÃÄ@PRINTFD32_115200_5725_5724  0/276  Ram=0
+      ³  ÀÄ@DIV3232B  0/68  Ram=8
+      ÃÄ@const1283  0/38  Ram=0
+      ÃÄ@PRINTFD32_115200_5725_5724  0/276  Ram=0
+      ³  ÀÄ*
+      ÃÄ@const1283  0/38  Ram=0
+      ÀÄ@PRINTFD32_115200_5725_5724  0/276  Ram=0
+         ÀÄ*

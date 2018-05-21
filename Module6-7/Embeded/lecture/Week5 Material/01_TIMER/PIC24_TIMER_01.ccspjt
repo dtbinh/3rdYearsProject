@@ -1,0 +1,16 @@
+[PROJECT]
+Target=PIC24_TIMER_01.hex
+Processor_Text=PIC24FJ48GA002
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=PIC24_TIMER_01.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[PIC24_TIMER_01.c]
+Type=4
+[mru-list]
+1=PIC24_TIMER_01.c
+[Units]
+Count=1
+1=PIC24_TIMER_01 (main)
