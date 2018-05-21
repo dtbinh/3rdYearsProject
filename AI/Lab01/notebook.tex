@@ -1,0 +1,1156 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{lab01\_notebook}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \subsection{3. Exploring data tables with
+Pandas}\label{exploring-data-tables-with-pandas}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use Pandas to read the house prices data. How many columns and rows
+  are there in this dataset?
+\item
+  The first step I usually do is to use commands like pandas.head() to
+  print a few rows of data. Look around what kind of features are
+  available and read data description.txt for more info. Try to
+  understand as much as you can. Pick three features you think will be
+  good predictors of house prices and explain what they are.
+\item
+  How many unique conditions are there in SaleCondition? Use Pandas to
+  find out how many samples are labeled with each condition. What do you
+  learn from doing this?
+\item
+  Select one variable you picked in b., do you want to know something
+  more about that variable? Use Pandas to answer your own question and
+  de- scribe what you did shortly here.
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}1}]:} \PY{c+c1}{\PYZsh{}Import Libraries}
+        \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+        \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+        \PY{k+kn}{import} \PY{n+nn}{seaborn} \PY{k}{as} \PY{n+nn}{sns}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn} \PY{k}{import} \PY{n}{linear\PYZus{}model}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{cross\PYZus{}val\PYZus{}predict}
+        \PY{k+kn}{from} \PY{n+nn}{scipy} \PY{k}{import} \PY{n}{stats}
+        \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
+\end{Verbatim}
+
+
+    \section{Answer 3.1}\label{answer-3.1}
+
+read data using 'read\_csv' there are 1460 rows and 81 columns in data
+set
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{Location} \PY{o}{=} \PY{l+s+sa}{r}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C:}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Users}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{dell}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Desktop}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{module8\PYZam{}9}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{AI}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Lab01}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{train.csv}\PY{l+s+s1}{\PYZsq{}}
+        \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{Location}\PY{p}{)}
+\end{Verbatim}
+
+
+    \section{Answer 3.2}\label{answer-3.2}
+
+The Three features are 1. MSSubClass : Type of house 2. LotArea : Lot
+size( Area of house) 3. LotFrontage : Area Front side of house
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}3}]:}    Id  MSSubClass MSZoning  LotFrontage  LotArea Street Alley LotShape  \textbackslash{}
+        0   1          60       RL         65.0     8450   Pave   NaN      Reg   
+        1   2          20       RL         80.0     9600   Pave   NaN      Reg   
+        2   3          60       RL         68.0    11250   Pave   NaN      IR1   
+        3   4          70       RL         60.0     9550   Pave   NaN      IR1   
+        4   5          60       RL         84.0    14260   Pave   NaN      IR1   
+        
+          LandContour Utilities    {\ldots}     PoolArea PoolQC Fence MiscFeature MiscVal  \textbackslash{}
+        0         Lvl    AllPub    {\ldots}            0    NaN   NaN         NaN       0   
+        1         Lvl    AllPub    {\ldots}            0    NaN   NaN         NaN       0   
+        2         Lvl    AllPub    {\ldots}            0    NaN   NaN         NaN       0   
+        3         Lvl    AllPub    {\ldots}            0    NaN   NaN         NaN       0   
+        4         Lvl    AllPub    {\ldots}            0    NaN   NaN         NaN       0   
+        
+          MoSold YrSold  SaleType  SaleCondition  SalePrice  
+        0      2   2008        WD         Normal     208500  
+        1      5   2007        WD         Normal     181500  
+        2      9   2008        WD         Normal     223500  
+        3      2   2006        WD        Abnorml     140000  
+        4     12   2008        WD         Normal     250000  
+        
+        [5 rows x 81 columns]
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{df}\PY{o}{.}\PY{n}{dtypes} \PY{c+c1}{\PYZsh{}Check data types of all features}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}4}]:} Id                 int64
+        MSSubClass         int64
+        MSZoning          object
+        LotFrontage      float64
+        LotArea            int64
+        Street            object
+        Alley             object
+        LotShape          object
+        LandContour       object
+        Utilities         object
+        LotConfig         object
+        LandSlope         object
+        Neighborhood      object
+        Condition1        object
+        Condition2        object
+        BldgType          object
+        HouseStyle        object
+        OverallQual        int64
+        OverallCond        int64
+        YearBuilt          int64
+        YearRemodAdd       int64
+        RoofStyle         object
+        RoofMatl          object
+        Exterior1st       object
+        Exterior2nd       object
+        MasVnrType        object
+        MasVnrArea       float64
+        ExterQual         object
+        ExterCond         object
+        Foundation        object
+                          {\ldots}   
+        BedroomAbvGr       int64
+        KitchenAbvGr       int64
+        KitchenQual       object
+        TotRmsAbvGrd       int64
+        Functional        object
+        Fireplaces         int64
+        FireplaceQu       object
+        GarageType        object
+        GarageYrBlt      float64
+        GarageFinish      object
+        GarageCars         int64
+        GarageArea         int64
+        GarageQual        object
+        GarageCond        object
+        PavedDrive        object
+        WoodDeckSF         int64
+        OpenPorchSF        int64
+        EnclosedPorch      int64
+        3SsnPorch          int64
+        ScreenPorch        int64
+        PoolArea           int64
+        PoolQC            object
+        Fence             object
+        MiscFeature       object
+        MiscVal            int64
+        MoSold             int64
+        YrSold             int64
+        SaleType          object
+        SaleCondition     object
+        SalePrice          int64
+        Length: 81, dtype: object
+\end{Verbatim}
+            
+    \section{Answer 3.3}\label{answer-3.3}
+
+There are 6 condition: 'Normal', 'Abnorml', 'Partial', 'AdjLand',
+'Alloca', 'Family' 1. 'Normal' = 1,198 samples 2. 'Abnorml' = 101
+samples 3. 'Partial' = 125 samples 4. 'AdjLand' = 4 samples 5. 'Alloca'
+= 12 samples 6. 'Family' = 20 samples
+
+I learned about how to find unique condition and how to prepare data to
+find how many number of each condition
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{}find unique condition}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}5}]:} array(['Normal', 'Abnorml', 'Partial', 'AdjLand', 'Alloca', 'Family'],
+              dtype=object)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{c+c1}{\PYZsh{} find how many data in each condition}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Normal}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Abnorml}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Partial}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{AdjLand}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Alloca}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SaleCondition}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Family}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+1198
+101
+125
+4
+12
+20
+
+    \end{Verbatim}
+
+    \section{Answer 3.4}\label{answer-3.4}
+
+I want to know how many samples of each condition in MSSubClass feature
+and Is it has missing values and what is the data type of these column?
+
+So I use loop and unique() and describe to find out
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+            \PY{n+nb}{print}\PY{p}{(}\PY{n}{i}\PY{p}{,}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{n}{i}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+60 299
+20 536
+70 60
+50 144
+190 30
+45 12
+90 52
+120 87
+30 69
+85 20
+80 58
+160 63
+75 16
+180 10
+40 4
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{describe}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}8}]:} <bound method NDFrame.describe of 0        60
+        1        20
+        2        60
+        3        70
+        4        60
+        5        50
+        6        20
+        7        60
+        8        50
+        9       190
+        10       20
+        11       60
+        12       20
+        13       20
+        14       20
+        15       45
+        16       20
+        17       90
+        18       20
+        19       20
+        20       60
+        21       45
+        22       20
+        23      120
+        24       20
+        25       20
+        26       20
+        27       20
+        28       20
+        29       30
+               {\ldots} 
+        1430     60
+        1431    120
+        1432     30
+        1433     60
+        1434     20
+        1435     20
+        1436     20
+        1437     20
+        1438     20
+        1439     60
+        1440     70
+        1441    120
+        1442     60
+        1443     30
+        1444     20
+        1445     85
+        1446     20
+        1447     60
+        1448     50
+        1449    180
+        1450     90
+        1451     20
+        1452    180
+        1453     20
+        1454     20
+        1455     60
+        1456     20
+        1457     70
+        1458     20
+        1459     20
+        Name: MSSubClass, Length: 1460, dtype: int64>
+\end{Verbatim}
+            
+    \subsection{4. Learning to explore data with
+Seaborn}\label{learning-to-explore-data-with-seaborn}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Let us first look at the variable we want to predict SalePrice. Use
+  Seaborn to plot histogram of sale prices. What do you notice in the
+  histogram?
+\item
+  Plot the histogram of the LotArea variable. What do you notice in the
+  histogram?
+\item
+  Use Seaborn to plot LotArea in the x-axis and SalePrice on the y-axis.
+  Try plotting log(LotArea) versus log(SalePrice) and see if the plot
+  looks better.
+\end{enumerate}
+
+    \section{Answer 4.1}\label{answer-4.1}
+
+The histrogram isn't a Normal Distribution, It has some skewness
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}9}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x1b8e18cfdd8>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section{Answer 4.2}\label{answer-4.2}
+
+The histrogram isn't a Normal Distribution, It has very skewness
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}10}]:} <matplotlib.axes.\_subplots.AxesSubplot at 0x1b8e92a2ef0>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section{Answer 4.3}\label{answer-4.3}
+
+The plot after take log in each axises are better because its remove the
+skewness of data so the new data are normal distribution
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{c+c1}{\PYZsh{}plot before take log}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{LotArea}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{y} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SalePrice}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{df}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}11}]:} <seaborn.axisgrid.JointGrid at 0x1b8e92d2080>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_19_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}12}]:} \PY{c+c1}{\PYZsh{}plot after take log}
+         \PY{n}{cpdf} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{copy}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{} copy dataframe then take log at two column }
+         \PY{n}{cpdf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{log}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{cpdf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{log}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         
+         \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{x} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{LotArea}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{y} \PY{o}{=} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SalePrice}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{cpdf}\PY{p}{)} \PY{c+c1}{\PYZsh{}plot new dataframe}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}12}]:} <seaborn.axisgrid.JointGrid at 0x1b8e96e7c50>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_20_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{5. Dealing with missing
+values}\label{dealing-with-missing-values}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Suppose we want to start the first step of house price modeling by
+  exploring the relationship between four variables: MSSubClass,
+  LotArea, LotFrontage and SalePrice. I have done some exploring and
+  found out that LotFrontage has a lot of missing values, so you need to
+  fix it.
+\item
+  LotFrontage is the width of the front side of the property. Use Pandas
+  to find out how many of the houses in our database is missing
+  LotFrontage value.
+\item
+  Use Pandas to replace NaN values with another number. Since we are
+  just exploring and not modeling yet, you can simply replace NaN with
+  zeros for now.
+\end{enumerate}
+
+    \section{Answer 5}\label{answer-5}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  It has 259 missing values
+\item
+  use df{[}np.isnan(df{[}'LotFrontage'{]}){]} = 0 to replace NaN by zero
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n+nb}{print}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{isnan}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{}How many NaN in \PYZsq{}LotFrontage\PYZsq{}}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+259
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{df}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{isnan}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{]} \PY{o}{=} \PY{l+m+mi}{0} \PY{c+c1}{\PYZsh{}replace NaN by zero}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{}recheck there aren\PYZsq{}t NaN in \PYZsq{}LotFrontage\PYZsq{}}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}15}]:} array([ 65.,  80.,  68.,  60.,  84.,  85.,  75.,   0.,  51.,  50.,  70.,
+                 91.,  72.,  66., 101.,  57.,  44., 110.,  98.,  47., 108., 112.,
+                 74., 115.,  61.,  48.,  33.,  52., 100.,  24.,  89.,  63.,  76.,
+                 81.,  95.,  69.,  21.,  32.,  78., 121., 122.,  40., 105.,  73.,
+                 77.,  64.,  94.,  34.,  90.,  55.,  88.,  82.,  71., 120., 107.,
+                 92., 134.,  62.,  86., 141.,  97.,  54.,  41.,  79., 174.,  99.,
+                 67.,  83.,  43., 103.,  93.,  30., 129., 140.,  35.,  37., 118.,
+                 87., 116., 150., 111.,  49.,  96.,  59.,  36.,  56., 102.,  58.,
+                 38., 109., 130.,  53., 137.,  45., 106., 104.,  42.,  39., 144.,
+                114., 128., 149., 313., 168., 182., 138., 160., 152., 124., 153.,
+                 46.])
+\end{Verbatim}
+            
+    \subsection{6. Correlations between multiple
+variables}\label{correlations-between-multiple-variables}
+
+One incredible feature of Seaborn is the ability to create correlation
+grid with pairplot function. We want to create one single plot that show
+us how all variables are correlated. 1. First, you need to create a data
+table with four columns: MSSubClass, LotArea (with log function
+applied), LotFrontage (missing values replaced) and SalePrice (with log
+function applied). 2. Then, use pairplot to create a grid of correlation
+plots. What do you observe from this plot?
+
+    \section{Answer 6}\label{answer-6}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Create new Dataframe the assign data in each columns
+\item
+  The plot show that in each subclass has many saleprice and the
+  saleprice relative with LotArea and LotFrontage, I found at subclass =
+  0 the LotFrontage = 0 Too.
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}16}]:} \PY{c+c1}{\PYZsh{}create new data frame}
+         \PY{n}{ndf} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{n}{columns} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{ndf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+         \PY{n}{ndf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{cpdf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotArea}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{c+c1}{\PYZsh{}log function applied}
+         \PY{n}{ndf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{df}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{LotFrontage}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} 
+         \PY{n}{ndf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{cpdf}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{c+c1}{\PYZsh{}log function applied}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{ndf}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{}Check data frame collect}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}17}]:}    MSSubClass   LotArea  LotFrontage  SalePrice
+         0          60  9.041922         65.0  12.247694
+         1          20  9.169518         80.0  12.109011
+         2          60  9.328123         68.0  12.317167
+         3          70  9.164296         60.0  11.849398
+         4          60  9.565214         84.0  12.429216
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{np}\PY{o}{.}\PY{n}{shape}\PY{p}{(}\PY{n}{ndf}\PY{p}{)} \PY{c+c1}{\PYZsh{}Check new data frame still has 1460 rows }
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}18}]:} (1460, 4)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{pairplot}\PY{p}{(}\PY{n}{ndf}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}19}]:} <seaborn.axisgrid.PairGrid at 0x1b8e92d2a20>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{7. Data Preparation}\label{data-preparation}
+
+Let's prepare train.csv for model training
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Pick columns that are numeric data and plot distributions of those
+  data (with Seaborn). If you find a column with skewed distribution you
+  will write a script to transform that column with a log function. Then
+  standardize them.
+\item
+  For categorical variables, we will simply transform categorical data
+  into numeric data by using function \texttt{pandas.get\ dummies()}.
+\item
+  Split data into x and y. The variable x contains all the house
+  features except the SalePrice. y contains only the SalePrice.
+\end{enumerate}
+
+    \section{Answer 7}\label{answer-7}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Create new dataframe to collect numeric data, remove numeric that be
+  categorical data, fill nan value by mean of that column
+\item
+  Remove skewness by np.log but add 1 in skewed column for resolve -inf
+  value after take log(0)
+\item
+  Standardize by using Z-Score
+\item
+  Create new dataframe to collect categorical data the one-hot encoding
+  by using pd.get\_dummies
+\item
+  Concatenate numeric data and categorical data in new dataframe
+\item
+  split to x and y
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{n}{Location}\PY{p}{)} \PY{c+c1}{\PYZsh{}read data}
+         \PY{c+c1}{\PYZsh{} choose numerical data}
+         \PY{n}{numerical\PYZus{}df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{select\PYZus{}dtypes}\PY{p}{(}\PY{n}{include}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{integer}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{c+c1}{\PYZsh{} categorical data with numerical data type}
+         \PY{n}{cat\PYZus{}numeric} \PY{o}{=} \PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MSSubClass}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{OverallQual}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{OverallCond}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{YearBuilt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{YearRemodAdd}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{GarageYrBlt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{MoSold}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{YrSold}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}
+         \PY{c+c1}{\PYZsh{} drop categorical data}
+         \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{cat\PYZus{}numeric}\PY{p}{:}
+             \PY{n}{numerical\PYZus{}df} \PY{o}{=} \PY{n}{numerical\PYZus{}df}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{n}{columns} \PY{o}{=} \PY{n}{i}\PY{p}{)}
+         \PY{c+c1}{\PYZsh{} fill NaN Value by mean}
+         \PY{n}{numerical\PYZus{}df} \PY{o}{=} \PY{n}{numerical\PYZus{}df}\PY{o}{.}\PY{n}{fillna}\PY{p}{(}\PY{n}{numerical\PYZus{}df}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{pairplot}\PY{p}{(}\PY{n}{numerical\PYZus{}df}\PY{p}{)} \PY{c+c1}{\PYZsh{} plot to see distribution}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}20}]:} <seaborn.axisgrid.PairGrid at 0x1b8eb1d3550>
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_34_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}21}]:} \PY{c+c1}{\PYZsh{}Remove skewness }
+         \PY{n}{skew\PYZus{}numerical\PYZus{}df} \PY{o}{=} \PY{n}{numerical\PYZus{}df}\PY{o}{.}\PY{n}{copy}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{}new data frame for after remove skewed }
+         \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{numerical\PYZus{}df}\PY{p}{:}
+             \PY{n}{skewness} \PY{o}{=} \PY{n}{numerical\PYZus{}df}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{o}{.}\PY{n}{skew}\PY{p}{(}\PY{p}{)}
+             \PY{k}{if} \PY{n+nb}{abs}\PY{p}{(}\PY{n}{skewness}\PY{p}{)} \PY{o}{\PYZgt{}}\PY{o}{=} \PY{l+m+mi}{1}\PY{p}{:} \PY{c+c1}{\PYZsh{}skewed distribution if abs(skewness) \PYZgt{}= 1}
+                 \PY{n}{skew\PYZus{}numerical\PYZus{}df}\PY{p}{[}\PY{n}{i}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{log}\PY{p}{(}\PY{n}{numerical\PYZus{}df}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{o}{+}\PY{l+m+mi}{1}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}22}]:} \PY{c+c1}{\PYZsh{}Standardize by using z\PYZhy{}score}
+         \PY{n}{skew\PYZus{}numerical\PYZus{}df} \PY{o}{=} \PY{p}{(}\PY{n}{skew\PYZus{}numerical\PYZus{}df}\PY{o}{\PYZhy{}}\PY{n}{skew\PYZus{}numerical\PYZus{}df}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}\PY{o}{/}\PY{n}{skew\PYZus{}numerical\PYZus{}df}\PY{o}{.}\PY{n}{std}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}23}]:} \PY{c+c1}{\PYZsh{}one\PYZhy{}hot encoding categorical data }
+         \PY{n}{cate\PYZus{}df} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{select\PYZus{}dtypes}\PY{p}{(}\PY{n}{exclude}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{number}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{integer}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{floating}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+         \PY{n}{cate\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{get\PYZus{}dummies}\PY{p}{(}\PY{n}{cate\PYZus{}df}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{cate\PYZus{}num\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{}new data frame for categorical numerical type}
+         \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{cat\PYZus{}numeric}\PY{p}{:}
+             \PY{k}{if} \PY{n}{i} \PY{o}{!=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Id}\PY{l+s+s1}{\PYZsq{}}\PY{p}{:} \PY{c+c1}{\PYZsh{}except \PYZsq{}Id\PYZsq{} }
+                 \PY{n}{x} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{get\PYZus{}dummies}\PY{p}{(}\PY{n}{df}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{} one\PYZhy{}hot encoding in each columns}
+                 \PY{n}{cate\PYZus{}num\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{concat}\PY{p}{(}\PY{p}{[}\PY{n}{cate\PYZus{}num\PYZus{}df}\PY{p}{,}\PY{n}{x}\PY{p}{]}\PY{p}{,}\PY{n}{axis} \PY{o}{=} \PY{l+m+mi}{1}\PY{p}{)} \PY{c+c1}{\PYZsh{}concatenate to data frame in next column}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}25}]:} \PY{c+c1}{\PYZsh{} Final data frame for already preprocessing data}
+         \PY{n}{prepare\PYZus{}df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{concat}\PY{p}{(}\PY{p}{[}\PY{n}{skew\PYZus{}numerical\PYZus{}df}\PY{p}{,}\PY{n}{cate\PYZus{}num\PYZus{}df}\PY{p}{,}\PY{n}{cate\PYZus{}df}\PY{p}{]}\PY{p}{,}\PY{n}{axis} \PY{o}{=} \PY{l+m+mi}{1}\PY{p}{)}
+         \PY{n}{prepare\PYZus{}df}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}25}]:}    LotFrontage   LotArea  MasVnrArea  BsmtFinSF1  BsmtFinSF2  BsmtUnfSF  \textbackslash{}
+         0    -0.087176 -0.133225    1.192665    0.779164   -0.355221  -0.944267   
+         1     0.563517  0.113374   -0.815680    0.887953   -0.355221  -0.641008   
+         2     0.054061  0.419905    1.120646    0.654579   -0.355221  -0.301540   
+         3    -0.337486  0.103282   -0.815680    0.384407   -0.355221  -0.061648   
+         4     0.716670  0.878130    1.412226    0.754141   -0.355221  -0.174805   
+         
+            TotalBsmtSF  1stFlrSF  2ndFlrSF  LowQualFinSF          {\ldots}            \textbackslash{}
+         0     0.002512 -0.803370  1.161454     -0.133557          {\ldots}             
+         1     0.340998  0.418335 -0.794891     -0.133557          {\ldots}             
+         2     0.065374 -0.576479  1.188943     -0.133557          {\ldots}             
+         3    -0.105783 -0.439270  0.936955     -0.133557          {\ldots}             
+         4     0.256149  0.112089  1.617323     -0.133557          {\ldots}             
+         
+            SaleType\_ConLw  SaleType\_New  SaleType\_Oth  SaleType\_WD  \textbackslash{}
+         0               0             0             0            1   
+         1               0             0             0            1   
+         2               0             0             0            1   
+         3               0             0             0            1   
+         4               0             0             0            1   
+         
+            SaleCondition\_Abnorml  SaleCondition\_AdjLand  SaleCondition\_Alloca  \textbackslash{}
+         0                      0                      0                     0   
+         1                      0                      0                     0   
+         2                      0                      0                     0   
+         3                      1                      0                     0   
+         4                      0                      0                     0   
+         
+            SaleCondition\_Family  SaleCondition\_Normal  SaleCondition\_Partial  
+         0                     0                     1                      0  
+         1                     0                     1                      0  
+         2                     0                     1                      0  
+         3                     0                     0                      0  
+         4                     0                     1                      0  
+         
+         [5 rows x 602 columns]
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}26}]:} \PY{c+c1}{\PYZsh{} y collected SalePrice}
+         \PY{n}{y} \PY{o}{=} \PY{n}{prepare\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{]} 
+         
+         \PY{c+c1}{\PYZsh{} x collected all except \PYZsq{}SalePrice\PYZsq{}}
+         \PY{n}{x} \PY{o}{=} \PY{n}{prepare\PYZus{}df}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{p}{:}\PY{p}{]} 
+         \PY{n}{x} \PY{o}{=} \PY{n}{x}\PY{o}{.}\PY{n}{drop}\PY{p}{(}\PY{n}{columns} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{SalePrice}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsection{8. Let us first fit a very simple linear regression model,
+just to see what we
+get.}\label{let-us-first-fit-a-very-simple-linear-regression-model-just-to-see-what-we-get.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use import LinearRegression from sklearn.linear model and use function
+  \texttt{fit()} to fit the model.
+\item
+  Use function \texttt{predict()} to get house price predictions from
+  the model (let's call the predicted house prices yhat).
+\item
+  Plot \texttt{y} against \texttt{yhat} to see how good your predictions
+  are.
+\end{enumerate}
+
+    \section{Answer 8}\label{answer-8}
+
+กราฟที่ได้จากการ plot ดูแล้วมีแนวโน้มเป็นเส้นตรง แสดงว่าการ model
+predict ได้ค่อนข้างดี
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}27}]:} \PY{n}{regr} \PY{o}{=} \PY{n}{linear\PYZus{}model}\PY{o}{.}\PY{n}{LinearRegression}\PY{p}{(}\PY{p}{)} \PY{c+c1}{\PYZsh{} create regresion model}
+         \PY{n}{regr}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)} \PY{c+c1}{\PYZsh{}fit model}
+         \PY{n}{yhat} \PY{o}{=} \PY{n}{regr}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{x}\PY{p}{)} \PY{c+c1}{\PYZsh{}use regression model to predict }
+         \PY{c+c1}{\PYZsh{} plot y againt}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} 
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{yhat}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}27}]:} Text(0.5,0,'y')
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_43_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{9. Assessing Your Model}\label{assessing-your-model}
+
+According to Kaggle's official rule on this problem, they use root mean
+square errors (rmse) to judge the accuracy of our model. This error
+computes the dif- ference between the log of actual house prices and the
+log of predicted house price. Find the mean and squareroot them.
+
+We want to see how we compare to other machine learning contestants on
+Kag- gle so let us compute our rmse. Luckily, sklearn has done most of
+the work for you by providing mean square error function. You can use it
+by importing the function from sklearn.metrics. Then, you can compute
+mean square error and take a squareroot to get rmse.
+
+What's the rmse of your current model? Check out Kaggle Leaderboard for
+this problem to see how your number measures up with the other
+contestants.
+
+    \section{Answer 9}\label{answer-9}
+
+the root means square error is 0.195627
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}28}]:} \PY{n}{rms} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{square}\PY{p}{(}\PY{n}{y}\PY{o}{\PYZhy{}}\PY{n}{yhat}\PY{p}{)}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{rms}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+SalePrice    0.195627
+dtype: float64
+
+    \end{Verbatim}
+
+    \subsection{10. Cross Validation}\label{cross-validation}
+
+As we discussed earlier, don't brag about your model's accuracy until
+you have performed cross validation. Let us check cross-validated
+performance to avoid embarrassment.
+
+Luckily, scikit learn has done most of the work for us once again. You
+can use the function \texttt{cross\_val\_predict()} to train the model
+with cross validation method and output the predictions.
+
+What's the rmse of your cross-validated model? Discuss what you observe
+in your results here. You may try plotting this new yhat with y to get
+better insights about this question.
+
+    \section{Answer10}\label{answer10}
+
+จากกราฟที่ได้ พบว่า model predict ได้แย่มากถ้าใช้ cross validation
+method เมื่อเทียบกับ predict แบบธรรมดา โดย rms อันใหม่มีค่าเท่ากับ
+2.590273e+09 หมายความว่า model predict error เยอะมาก
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}29}]:} \PY{n}{cross\PYZus{}val\PYZus{}y} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{regr}\PY{p}{,}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}30}]:} \PY{n}{rms\PYZus{}cross} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{square}\PY{p}{(}\PY{n}{y}\PY{o}{\PYZhy{}}\PY{n}{cross\PYZus{}val\PYZus{}y}\PY{p}{)}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         \PY{n}{rms\PYZus{}cross}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}30}]:} SalePrice    2.590273e+09
+         dtype: float64
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}31}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{cross\PYZus{}val\PYZus{}y}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r.}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{cross\PYZus{}val\PYZus{}y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{y}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}31}]:} Text(0.5,0,'y')
+\end{Verbatim}
+            
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_51_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{11 (Optional) Fit Better
+Models}\label{optional-fit-better-models}
+
+There are other models you can fit that will perform better than linear
+regres- sion. For example, you can fit linear regression with L2
+regularization. This class of models has a street name of `Ridge
+Regression' and sklearn simply called them Ridge. As we learned last
+time, this model will fight overfitting problem. Furthermore, you can
+try linear regression with L1 regularization (street name Lasso
+Regression or Lasso in sklearn). Try these models and see how you com-
+pare with other Kagglers now. You can write about your findings below.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}32}]:} \PY{c+c1}{\PYZsh{} create Lasso and Ridge regression model }
+         \PY{n}{lsso} \PY{o}{=} \PY{n}{linear\PYZus{}model}\PY{o}{.}\PY{n}{Lasso}\PY{p}{(}\PY{p}{)}
+         \PY{n}{ridge} \PY{o}{=} \PY{n}{linear\PYZus{}model}\PY{o}{.}\PY{n}{Ridge}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c+c1}{\PYZsh{}fit model}
+         \PY{n}{lsso}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{ridge}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+\end{Verbatim}
+
+
+\begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}32}]:} Ridge(alpha=1.0, copy\_X=True, fit\_intercept=True, max\_iter=None,
+            normalize=False, random\_state=None, solver='auto', tol=0.001)
+\end{Verbatim}
+            
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}33}]:} \PY{c+c1}{\PYZsh{}predict data}
+         \PY{n}{lsso\PYZus{}y} \PY{o}{=} \PY{n}{lsso}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+         \PY{n}{ridge\PYZus{}y} \PY{o}{=} \PY{n}{ridge}\PY{o}{.}\PY{n}{predict}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}34}]:} \PY{n}{lsso\PYZus{}y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{reshape}\PY{p}{(}\PY{n}{lsso\PYZus{}y}\PY{p}{,}\PY{p}{(}\PY{l+m+mi}{1460}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{}shape of lsso\PYZus{}y is (1460,) So I reshape it to (1460,1)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}35}]:} \PY{c+c1}{\PYZsh{}calculate root mean square error}
+         \PY{n}{rms\PYZus{}lsso} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{square}\PY{p}{(}\PY{n}{y}\PY{o}{\PYZhy{}}\PY{n}{lsso\PYZus{}y}\PY{p}{)}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         \PY{n}{rms\PYZus{}ridge} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{square}\PY{p}{(}\PY{n}{y}\PY{o}{\PYZhy{}}\PY{n}{ridge\PYZus{}y}\PY{p}{)}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{rms\PYZus{}lsso}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{rms\PYZus{}ridge}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+SalePrice    0.999657
+dtype: float64
+SalePrice    0.212888
+dtype: float64
+
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

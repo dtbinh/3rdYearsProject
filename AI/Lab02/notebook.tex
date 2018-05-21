@@ -1,0 +1,1339 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    
+    
+    \usepackage[T1]{fontenc}
+    % Nicer default font (+ math font) than Computer Modern for most use cases
+    \usepackage{mathpazo}
+
+    % Basic figure setup, for now with no caption control since it's done
+    % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
+    \usepackage{graphicx}
+    % We will generate all images so they have a width \maxwidth. This means
+    % that they will get their normal width if they fit onto the page, but
+    % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
+    % Set max figure width to be 80% of text width, for now hardcoded.
+    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    % Ensure that by default, figures have no caption (until we provide a
+    % proper Figure object with a Caption API and a way to capture that
+    % in the conversion process - todo).
+    \usepackage{caption}
+    \DeclareCaptionLabelFormat{nolabel}{}
+    \captionsetup{labelformat=nolabel}
+
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{xcolor} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{textcomp} % defines textquotesingle
+    % Hack from http://tex.stackexchange.com/a/47451/13684:
+    \AtBeginDocument{%
+        \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
+    }
+    \usepackage{upquote} % Upright quotes for verbatim code
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
+    
+
+    
+    
+    % Colors for the hyperref package
+    \definecolor{urlcolor}{rgb}{0,.145,.698}
+    \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
+    \definecolor{citecolor}{rgb}{.12,.54,.11}
+
+    % ANSI colors
+    \definecolor{ansi-black}{HTML}{3E424D}
+    \definecolor{ansi-black-intense}{HTML}{282C36}
+    \definecolor{ansi-red}{HTML}{E75C58}
+    \definecolor{ansi-red-intense}{HTML}{B22B31}
+    \definecolor{ansi-green}{HTML}{00A250}
+    \definecolor{ansi-green-intense}{HTML}{007427}
+    \definecolor{ansi-yellow}{HTML}{DDB62B}
+    \definecolor{ansi-yellow-intense}{HTML}{B27D12}
+    \definecolor{ansi-blue}{HTML}{208FFB}
+    \definecolor{ansi-blue-intense}{HTML}{0065CA}
+    \definecolor{ansi-magenta}{HTML}{D160C4}
+    \definecolor{ansi-magenta-intense}{HTML}{A03196}
+    \definecolor{ansi-cyan}{HTML}{60C6C8}
+    \definecolor{ansi-cyan-intense}{HTML}{258F8F}
+    \definecolor{ansi-white}{HTML}{C5C1B4}
+    \definecolor{ansi-white-intense}{HTML}{A1A6B2}
+
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{lab02\_notebook}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@fm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@vm\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sa\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@dl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=urlcolor,
+      linkcolor=linkcolor,
+      citecolor=citecolor,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    \section{2 Sentiment Analysis}\label{sentiment-analysis}
+
+\subsection{2.2 Movie Review Data}\label{movie-review-data}
+
+Let us first start by looking at the data provided with the exercise. We
+have positive and negative movie reviews labeled by human readers, all
+positive and negative reviews are in the `pos' and `neg' folders
+respectively. If you look in- side a sample file, you will see that
+these review messages have been `tokenized', where all words are
+separated from punctuations. There are approximately 1000 files in each
+category with files names starting with cv000, cv001, cv002 and so on.
+You will split the dataset into training set and testing set.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Write some code to load the data from text files.
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}170}]:} \PY{c+c1}{\PYZsh{}Import Libraries}
+          \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k}{as} \PY{n+nn}{pd}
+          \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+          \PY{k+kn}{import} \PY{n+nn}{glob}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{neg\PYZus{}txt} \PY{o}{=} \PY{n}{glob}\PY{o}{.}\PY{n}{glob}\PY{p}{(} \PY{l+s+sa}{r}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C:}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Users}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{dell}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Desktop}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{module8\PYZam{}9}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{AI}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Lab02}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{neg}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{*.txt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{c+c1}{\PYZsh{}read file name in folder\PYZsq{} neg}
+        \PY{n}{pos\PYZus{}txt} \PY{o}{=} \PY{n}{glob}\PY{o}{.}\PY{n}{glob}\PY{p}{(} \PY{l+s+sa}{r}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{C:}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Users}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{dell}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Desktop}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{module8\PYZam{}9}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{AI}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{Lab02}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{pos}\PY{l+s+s1}{\PYZbs{}}\PY{l+s+s1}{*.txt}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{c+c1}{\PYZsh{}read file name in folder\PYZsq{} pos}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}3}]:} \PY{c+c1}{\PYZsh{} read data in txt.file and append it to list}
+        \PY{n}{raw\PYZus{}data} \PY{o}{=} \PY{p}{[}\PY{p}{]}
+        \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{pos\PYZus{}txt}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+            \PY{k}{with} \PY{n+nb}{open}\PY{p}{(}\PY{n}{pos\PYZus{}txt}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{k}{as} \PY{n}{F}\PY{p}{:} 
+                \PY{n}{raw\PYZus{}data}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{F}\PY{o}{.}\PY{n}{read}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+            
+        \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{neg\PYZus{}txt}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+            \PY{k}{with} \PY{n+nb}{open}\PY{p}{(}\PY{n}{neg\PYZus{}txt}\PY{p}{[}\PY{n}{i}\PY{p}{]}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{r}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{k}{as} \PY{n}{F}\PY{p}{:} 
+                \PY{n}{raw\PYZus{}data}\PY{o}{.}\PY{n}{append}\PY{p}{(}\PY{n}{F}\PY{o}{.}\PY{n}{read}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \subsection{2.3 TF-IDF}\label{tf-idf}
+
+From a raw text review, you want to create a vector, whose elements
+indicate the number of each word in each document. The frequency of all
+words within the documents are the `features' of this machine learning
+problem.
+
+A popular method for transforming a text to a vector is called tf-idf,
+short for term frequencyinverse document frequency.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Conduct a research about tf-idf and explain how it works.
+\item
+  Scikit-learn provides a module for calculating this, this is called
+  TfidfVec- torizer. You can study how this function is used here:
+\end{enumerate}
+
+\texttt{http://scikit-learn.org/stable/modules/generated/sklearn.feature\_extraction.text.TfidfVectorizer.html}
+
+Write code to transform your text to tf-idf vector.
+
+    \section{TF-idf}\label{tf-idf}
+
+\begin{verbatim}
+จะเป็นการหา frequency ของ word ต่างๆที่อยู่ใน raw_data ทั้งหมด แล้ว return ออกมาเป็น column ซึ่งขนาดของ column จะเท่ากับ จำนวน word ที่ไม่ซ้ำกันทั้งหมด
+\end{verbatim}
+
+โดยในแต่ละ column ค่าออกมาอยู่ในช่วง 0-1 1. โดยถ้าเข้าใกล้ 1 หมายถึง มี
+word นั้นอยู่ใน text.file นั้นเยอะมาก 2. ถ้าเข้าใกล้ 0 หมายถึง มี word
+นั้นอยู่ใน text.file น้อยมาก
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}4}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{feature\PYZus{}extraction}\PY{n+nn}{.}\PY{n+nn}{text} \PY{k}{import} \PY{n}{TfidfVectorizer}
+        \PY{n}{Tfid1} \PY{o}{=} \PY{n}{TfidfVectorizer}\PY{p}{(}\PY{p}{)}
+        \PY{n}{feature1} \PY{o}{=} \PY{n}{Tfid1}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{raw\PYZus{}data}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{} assign true class }
+        \PY{n}{y} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{hstack}\PY{p}{(}\PY{p}{(}\PY{n}{np}\PY{o}{.}\PY{n}{ones}\PY{p}{(}\PY{l+m+mi}{1000}\PY{p}{)}\PY{p}{,}\PY{n}{np}\PY{o}{.}\PY{n}{zeros}\PY{p}{(}\PY{l+m+mi}{1000}\PY{p}{)}\PY{p}{)}\PY{p}{)} \PY{c+c1}{\PYZsh{}1 = pos , 0 = neg}
+\end{Verbatim}
+
+
+    \subsection{2.4 Classification}\label{classification}
+
+Use 4 different models to classify each movie into positive or negative
+category.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  K-Nearestneighbormodel,using module
+  \texttt{sklearn.neighbors.KNeighborsClassifier}
+\item
+  RandomForest, using module
+  \texttt{sklearn.ensemble.RandomForestClassifier}
+\item
+  SVM, using module \texttt{sklearn.svm.SVC}
+\item
+  Neural network, using \texttt{sklearn.neural\_network.MLPClassifier}
+\end{enumerate}
+
+You may pick other models you would like to try. Just present results
+for at least 4 models. Please provide your code for model fitting and
+cross validation. Calculate your classification accuracy, precision, and
+recall.
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}6}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{neighbors} \PY{k}{import} \PY{n}{KNeighborsClassifier}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{ensemble} \PY{k}{import} \PY{n}{RandomForestClassifier}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{svm} \PY{k}{import} \PY{n}{SVC}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{neural\PYZus{}network} \PY{k}{import} \PY{n}{MLPClassifier}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{model\PYZus{}selection} \PY{k}{import} \PY{n}{cross\PYZus{}val\PYZus{}predict}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{metrics} \PY{k}{import} \PY{n}{accuracy\PYZus{}score}
+        \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{metrics} \PY{k}{import} \PY{n}{classification\PYZus{}report}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{KN1} \PY{o}{=} \PY{n}{KNeighborsClassifier}\PY{p}{(}\PY{p}{)}
+        \PY{n}{yhat\PYZus{}KN1} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{KN1}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+        \PY{n}{scoreKN1} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}KN1}\PY{p}{)}
+        \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}KN1}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}KN1 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreKN1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------KN1 with feature1-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.80      0.19      0.31      1000
+        1.0       0.54      0.95      0.69      1000
+
+avg / total       0.67      0.57      0.50      2000
+
+accuracy = 0.572
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}96}]:} \PY{n}{RF1} \PY{o}{=} \PY{n}{RandomForestClassifier}\PY{p}{(}\PY{p}{)}
+         \PY{n}{yhat\PYZus{}RF1} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{RF1}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{scoreRF1} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}RF1}\PY{p}{)}
+         \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}RF1}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}RF1 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreRF1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------RF1 with feature1-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.62      0.77      0.69      1000
+        1.0       0.70      0.53      0.60      1000
+
+avg / total       0.66      0.65      0.65      2000
+
+accuracy = 0.6515
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}151}]:} \PY{n}{SVM1} \PY{o}{=} \PY{n}{SVC}\PY{p}{(}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}SVM1} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{SVM1}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreSVM1} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}SVM1}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}SVM1}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}SVM1 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreSVM1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------SVM1 with feature1-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.80      0.70      0.74      1000
+        1.0       0.73      0.82      0.77      1000
+
+avg / total       0.76      0.76      0.76      2000
+
+accuracy = 0.7585
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{MLP1} \PY{o}{=} \PY{n}{MLPClassifier}\PY{p}{(}\PY{p}{)}
+         \PY{n}{yhat\PYZus{}MLP1} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{MLP1}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{scoreMLP1} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}MLP1}\PY{p}{)}
+         \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}MLP1}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}MLP1 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreMLP1}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------MLP1 with feature1-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.84      0.82      0.83      1000
+        1.0       0.82      0.84      0.83      1000
+
+avg / total       0.83      0.83      0.83      2000
+
+accuracy = 0.8275
+
+    \end{Verbatim}
+
+    \subsection{2.5 Model Tuning}\label{model-tuning}
+
+Can you try to beat the simple model you created above? Here are some
+things you may try:
+
+\begin{itemize}
+\tightlist
+\item
+  When creating TfidfVectorizer object, you may tweak sublinear\_tf
+  parameter which use the tf with logarithmic scale instead of the usual
+  tf.
+\item
+  You may also exclude words that are too frequent or too rare, by
+  adjusting max\_df and min\_df.
+\item
+  Adjusting parameters available in the model, like neural network
+  structure or number of trees in the forest.
+\end{itemize}
+
+Design at least 3 experiments using these techniques. Show your
+experimental results.
+
+    \section{KNeighbors}\label{kneighbors}
+
+กำหนด max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.676 \textgreater{}
+0.572 2. precission: 0.68 \textgreater{} 0.67 3. recall: 0.68
+\textgreater{} 0.57 เปลี่ยน hyper parameter ค่า k = 300 จาก Default = 5
+โดย max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.727 2. precission: 0.74
+3. recall: 0.73
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}58}]:} \PY{n}{Tfid2} \PY{o}{=} \PY{n}{TfidfVectorizer}\PY{p}{(}\PY{n}{max\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.85}\PY{p}{,}\PY{n}{min\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.1}\PY{p}{)}
+         \PY{n}{feature2} \PY{o}{=} \PY{n}{Tfid2}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{raw\PYZus{}data}\PY{p}{)}
+         \PY{n}{yhat\PYZus{}KN2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{KN1}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{scoreKN2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}KN2}\PY{p}{)}
+         \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}KN2}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}KN1 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreKN2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------KN1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.71      0.60      0.65      1000
+        1.0       0.65      0.75      0.70      1000
+
+avg / total       0.68      0.68      0.67      2000
+
+accuracy = 0.676
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}82}]:} \PY{n}{KN2} \PY{o}{=} \PY{n}{KNeighborsClassifier}\PY{p}{(}\PY{n}{n\PYZus{}neighbors} \PY{o}{=} \PY{l+m+mi}{300}\PY{p}{)}
+         \PY{n}{yhat\PYZus{}KN2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{KN2}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{scoreKN2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}KN2}\PY{p}{)}
+         \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}KN2}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}KN2 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreKN2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------KN1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.69      0.84      0.75      1000
+        1.0       0.79      0.61      0.69      1000
+
+avg / total       0.74      0.73      0.72      2000
+
+accuracy = 0.727
+
+    \end{Verbatim}
+
+    \section{RandomForest}\label{randomforest}
+
+กำหนด max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.6775 \textgreater{}
+0.6515 2. precission: 0.68 \textgreater{} 0.66 3. recall: 0.68
+\textgreater{} 0.65 เปลี่ยน hyper parameter ค่า n\_estimators = 300 จาก
+Default = 10 โดย max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.7855 2.
+precission: 0.79 3. recall: 0.79
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}145}]:} \PY{n}{Tfid2} \PY{o}{=} \PY{n}{TfidfVectorizer}\PY{p}{(}\PY{n}{max\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.85}\PY{p}{,}\PY{n}{min\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.1}\PY{p}{)}
+          \PY{n}{feature2} \PY{o}{=} \PY{n}{Tfid2}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{raw\PYZus{}data}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}RF2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{RF1}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreRF2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}RF2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}RF2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}RF1 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreRF2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------RF1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.65      0.77      0.71      1000
+        1.0       0.72      0.58      0.64      1000
+
+avg / total       0.68      0.68      0.67      2000
+
+accuracy = 0.6775
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}149}]:} \PY{n}{RF2} \PY{o}{=} \PY{n}{RandomForestClassifier}\PY{p}{(}\PY{n}{n\PYZus{}estimators} \PY{o}{=} \PY{l+m+mi}{1000}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}RF2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{RF2}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreRF2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}RF2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}RF2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}RF2 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreRF2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------RF1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.78      0.80      0.79      1000
+        1.0       0.79      0.77      0.78      1000
+
+avg / total       0.79      0.79      0.79      2000
+
+accuracy = 0.7855
+
+    \end{Verbatim}
+
+    \section{SVM}\label{svm}
+
+กำหนด max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.7285 \textless{}
+0.7585 2. precission: 0.73 \textless{} 0.76 3. recall: 0.73 \textless{}
+0.76 \textbf{max\_df และ min\_df ทำให้ performance ลดลง เปลี่ยน hyper
+parameter ค่า kernel = 'sigmoid' จาก Default = 'rbf' โดย max\_df,min\_df
+(default) 1. accuracy: 0.7585 2. precission: 0.76 3. recall: 0.76
+}ผลลัพธ์ไม่ต่าง เปลี่ยน hyper parameter ค่า kernel = 'linear' จาก
+Default = 'rbf' โดย max\_df,min\_df (default) 1. accuracy: 0.845 2.
+precission: 0.85 3. recall: 0.84 **ผลลัพธ์ดีขึ้น
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}159}]:} \PY{n}{Tfid2} \PY{o}{=} \PY{n}{TfidfVectorizer}\PY{p}{(}\PY{n}{max\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.85} \PY{p}{,}\PY{n}{min\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.1} \PY{p}{)}
+          \PY{n}{feature2} \PY{o}{=} \PY{n}{Tfid2}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{raw\PYZus{}data}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}SVM2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{SVM1}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreSVM2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}SVM1 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreSVM2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------SVM1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.77      0.66      0.71      1000
+        1.0       0.70      0.80      0.75      1000
+
+avg / total       0.73      0.73      0.73      2000
+
+accuracy = 0.7285
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}160}]:} \PY{n}{SVM2} \PY{o}{=} \PY{n}{SVC}\PY{p}{(}\PY{n}{kernel} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{sigmoid}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}SVM2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{SVM2}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreSVM2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}SVM2 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreSVM2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------SVM1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.80      0.70      0.74      1000
+        1.0       0.73      0.82      0.77      1000
+
+avg / total       0.76      0.76      0.76      2000
+
+accuracy = 0.7585
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}161}]:} \PY{n}{SVM2} \PY{o}{=} \PY{n}{SVC}\PY{p}{(}\PY{n}{kernel} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{linear}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}SVM2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{SVM2}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreSVM2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}SVM2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}SVM2 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreSVM2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------SVM1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.85      0.84      0.84      1000
+        1.0       0.84      0.85      0.85      1000
+
+avg / total       0.85      0.84      0.84      2000
+
+accuracy = 0.845
+
+    \end{Verbatim}
+
+    \section{MLP}\label{mlp}
+
+กำหนด max\_df = 0.85 min\_df = 0.1 1. accuracy: 0.7655 \textless{}
+0.8275 2. precission: 0.77 \textless{} 0.83 3. recall: 0.77 \textless{}
+0.83 \textbf{max\_df และ min\_df ทำให้ performance ลดลง เปลี่ยน hyper
+parameter ค่า hidden\_layer\_sizes = (200,) จาก Default = (100,) โดย
+max\_df,min\_df (default) 1. accuracy: 0.828 2. precission: 0.83 3.
+recall: 0.83 }accuracy เพิ่มขึ้น อย่างอื่นเท่าเดิม เปลี่ยน hyper
+parameter ค่า hidden\_layer\_sizes = (1000,) จาก Default = (100,) โดย
+max\_df,min\_df (default) 1. accuracy: 0.829 2. precission: 0.83 3.
+recall: 0.83 **accuracy เพิ่มขึ้น อย่างอื่นเท่าเดิม
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}32}]:} \PY{n}{yhat\PYZus{}MLP2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{MLP1}\PY{p}{,}\PY{n}{feature2}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+         \PY{n}{scoreMLP2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+         \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}MLP1 with feature2\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreMLP2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+C:\textbackslash{}Users\textbackslash{}dell\textbackslash{}Anaconda3\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}sklearn\textbackslash{}neural\_network\textbackslash{}multilayer\_perceptron.py:564: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  \% self.max\_iter, ConvergenceWarning)
+C:\textbackslash{}Users\textbackslash{}dell\textbackslash{}Anaconda3\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}sklearn\textbackslash{}neural\_network\textbackslash{}multilayer\_perceptron.py:564: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  \% self.max\_iter, ConvergenceWarning)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------MLP1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.77      0.76      0.76      1000
+        1.0       0.76      0.77      0.77      1000
+
+avg / total       0.77      0.77      0.77      2000
+
+accuracy = 0.7655
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+C:\textbackslash{}Users\textbackslash{}dell\textbackslash{}Anaconda3\textbackslash{}lib\textbackslash{}site-packages\textbackslash{}sklearn\textbackslash{}neural\_network\textbackslash{}multilayer\_perceptron.py:564: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  \% self.max\_iter, ConvergenceWarning)
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}168}]:} \PY{n}{MLP2} \PY{o}{=} \PY{n}{MLPClassifier}\PY{p}{(}\PY{n}{hidden\PYZus{}layer\PYZus{}sizes}\PY{o}{=}  \PY{p}{(}\PY{l+m+mi}{200}\PY{p}{,}\PY{p}{)}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}MLP2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{MLP2}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreMLP2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}MLP2 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreMLP2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------MLP1 with feature2-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.84      0.81      0.83      1000
+        1.0       0.82      0.84      0.83      1000
+
+avg / total       0.83      0.83      0.83      2000
+
+accuracy = 0.828
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}169}]:} \PY{n}{MLP2} \PY{o}{=} \PY{n}{MLPClassifier}\PY{p}{(}\PY{n}{hidden\PYZus{}layer\PYZus{}sizes}\PY{o}{=}  \PY{p}{(}\PY{l+m+mi}{1000}\PY{p}{,}\PY{p}{)}\PY{p}{)}
+          \PY{n}{yhat\PYZus{}MLP2} \PY{o}{=} \PY{n}{cross\PYZus{}val\PYZus{}predict}\PY{p}{(}\PY{n}{MLP2}\PY{p}{,}\PY{n}{feature1}\PY{p}{,}\PY{n}{y}\PY{p}{)}
+          \PY{n}{scoreMLP2} \PY{o}{=} \PY{n}{accuracy\PYZus{}score}\PY{p}{(}\PY{n}{y}\PY{p}{,}\PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+          \PY{n}{report} \PY{o}{=} \PY{n}{classification\PYZus{}report}\PY{p}{(}\PY{n}{y}\PY{p}{,} \PY{n}{yhat\PYZus{}MLP2}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}MLP2 with feature1\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{n}{report}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{accuracy = }\PY{l+s+s1}{\PYZsq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{scoreMLP2}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+--------------------------------MLP2 with feature1-----------------------------------
+
+             precision    recall  f1-score   support
+
+        0.0       0.84      0.81      0.83      1000
+        1.0       0.82      0.84      0.83      1000
+
+avg / total       0.83      0.83      0.83      2000
+
+accuracy = 0.829
+
+    \end{Verbatim}
+
+    \section{3 Text Clustering}\label{text-clustering}
+
+We have heard about Google News clustering. In this exercise, we are
+going to implement it with Python.
+
+\subsection{3.1 Data Preprocessing}\label{data-preprocessing}
+
+Let's switch up and use another dataset called 20newsgroup data, which
+is a collection of approximately 20,000 newsgroup documents, partitioned
+(nearly) evenly across 20 different newsgroups. The data is collected
+from a university's mailing list, where students exchange opinions in
+everything from motorcycles to middle east politics.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Import data using sklearn.datasets.fetch\_20newsgroups
+\item
+  Transform data to vector with TfidfVectorizer
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}171}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{datasets} \PY{k}{import} \PY{n}{fetch\PYZus{}20newsgroups} 
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}172}]:} \PY{n}{raw\PYZus{}data} \PY{o}{=} \PY{n}{fetch\PYZus{}20newsgroups}\PY{p}{(}\PY{n}{subset} \PY{o}{=} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{train}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)} \PY{c+c1}{\PYZsh{}select data in subset \PYZsq{}train\PYZsq{}}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}200}]:} \PY{c+c1}{\PYZsh{} transform data}
+          \PY{n}{Tfidf\PYZus{}google} \PY{o}{=} \PY{n}{TfidfVectorizer}\PY{p}{(}\PY{n}{max\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.8} \PY{p}{,} \PY{n}{min\PYZus{}df} \PY{o}{=} \PY{l+m+mf}{0.05}\PY{p}{)}
+          \PY{n}{x} \PY{o}{=} \PY{n}{Tfidf\PYZus{}google}\PY{o}{.}\PY{n}{fit\PYZus{}transform}\PY{p}{(}\PY{n}{raw\PYZus{}data}\PY{p}{)} 
+\end{Verbatim}
+
+
+    \subsection{3.2 Clustering}\label{clustering}
+
+We are going to use the simplest clustering model, k-means clustering,
+to do this task. Our hope is that this simple algorithm will result in
+meaningful news categories, without using labels.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fit K-Means clustering model to the text vector. What is the value of
+  K you should pick? Why?
+\item
+  Use Silhouette score to evaluate your clusters. Try to evaluate the
+  model for different values of k to see which k fits best for the
+  dataset.
+\end{enumerate}
+
+    \section{KMeans}\label{kmeans}
+
+\begin{verbatim}
+select k = 20 เพราะ data ที่ import เข้ามามี 20 groups
+\end{verbatim}
+
+Result 1. K = 20 Silhoutte score = 0.00307 2. K = 15 Silhoutte score =
+0.00484 3. K = 10 Silhoutte score = -0.00039 4. K = 5 Silhoutte score =
+0.00411 5. K = 35 Silhoutte score = 0.00525 6. K = 50 Silhoutte score =
+0.00913 จากผลลัพธ์ K = 50 ดีที่สุด แต่ผมคิดว่ามันไม่ควรจะแบ่งได้ 50
+cluster จึงเลือก K = 15 เพราะใน data จริงๆ จาก 20 group
+มันสามารถจัดกลุ่มคาวมคล้ายกันทำให้ group น้อยลงได้
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}201}]:} \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{cluster} \PY{k}{import} \PY{n}{KMeans}
+          \PY{k+kn}{from} \PY{n+nn}{sklearn}\PY{n+nn}{.}\PY{n+nn}{metrics} \PY{k}{import} \PY{n}{silhouette\PYZus{}score}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}202}]:} \PY{n}{kmean} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{20}\PY{p}{)} 
+          \PY{n}{kmean}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 20\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 20---------------------------------
+silhouette score = 0.003071184841869602
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}203}]:} \PY{n}{kmean1} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{15}\PY{p}{)} 
+          \PY{n}{kmean1}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean1}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 15\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 15---------------------------------
+silhouette score = 0.004844898597086147
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}204}]:} \PY{n}{kmean2} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{10}\PY{p}{)} 
+          \PY{n}{kmean2}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean2}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 10\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 10---------------------------------
+silhouette score = -0.0003900338875452058
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}205}]:} \PY{n}{kmean3} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{5}\PY{p}{)} 
+          \PY{n}{kmean3}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean3}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 5\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 5---------------------------------
+silhouette score = 0.004115487009679443
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}206}]:} \PY{n}{kmean4} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{35}\PY{p}{)} 
+          \PY{n}{kmean4}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean4}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 35\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 35---------------------------------
+silhouette score = 0.005255762323989831
+
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}207}]:} \PY{n}{kmean5} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{n\PYZus{}clusters} \PY{o}{=} \PY{l+m+mi}{50}\PY{p}{)} 
+          \PY{n}{kmean5}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{x}\PY{p}{)}
+          \PY{n}{sil\PYZus{}score} \PY{o}{=} \PY{n}{silhouette\PYZus{}score}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{kmean5}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}K = 50\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{silhouette score = }\PY{l+s+s1}{\PYZsq{}}\PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{sil\PYZus{}score}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+-----------------------------K = 50---------------------------------
+silhouette score = 0.009132529670051202
+
+    \end{Verbatim}
+
+    \section{3.3 Topic Terms}\label{topic-terms}
+
+We want to explore each cluster to understand what news articles are in
+the cluster, what terms are associated with the cluster. This will
+require a bit of hacking. 1. Use TfidfVectorizer.get feature names to
+extract words associated with each dimension of the text vector. 2.
+Extract cluster's centroids using kmeans.cluster centers . 3. For each
+centroid, print the top 15 words that have the highest frequency.
+
+    \section{Kmeans clustering K = 15}\label{kmeans-clustering-k-15}
+
+\begin{verbatim}
+TOP 15 word in each clusters
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Cluster 0: her she movie you was they when their like about there up
+  so out which
+\item
+  Cluster 1: movie was you they what just there horror me my like so
+  about or good
+\item
+  Cluster 2: house tom horror movie you they was what out good just
+  there her up some
+\item
+  Cluster 3: him life was story more movie which its her we their there
+  when man into
+\item
+  Cluster 4: jack her ship movie they she him good there you james up
+  more than love
+\item
+  Cluster 5: you movie your if out about or so her just what there they
+  was when
+\item
+  Cluster 6: alien ship they movie was which her earth more so its than
+  dr there when
+\item
+  Cluster 7: they movie there their up joe you out which like comedy
+  funny when can was
+\item
+  Cluster 8: mr robin which was her no characters there would out while
+  more films character series
+\item
+  Cluster 9: action movie van you was some like plot so there they good
+  out bad scenes
+\item
+  Cluster 10: war private men they movie their battle was british
+  american world most mission action about
+\item
+  Cluster 11: killer you horror murder movie more her was its about what
+  up they too which
+\item
+  Cluster 12: star effects planet science special fiction movie was
+  space they series so like some we
+\item
+  Cluster 13: they you we so was about like their there movie what or
+  just up out
+\item
+  Cluster 14: 10 you movie was me also about little some plot my well
+  did see out
+\end{enumerate}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}208}]:} \PY{n}{feat} \PY{o}{=} \PY{n}{Tfidf\PYZus{}google}\PY{o}{.}\PY{n}{get\PYZus{}feature\PYZus{}names}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}214}]:} \PY{n}{cluster\PYZus{}centers} \PY{o}{=} \PY{n}{kmean1}\PY{o}{.}\PY{n}{cluster\PYZus{}centers\PYZus{}}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}215}]:} \PY{n}{order\PYZus{}centroids} \PY{o}{=} \PY{n}{cluster\PYZus{}centers}\PY{o}{.}\PY{n}{argsort}\PY{p}{(}\PY{p}{)}\PY{p}{[}\PY{p}{:}\PY{p}{,} \PY{p}{:}\PY{p}{:}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+          \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n+nb}{len}\PY{p}{(}\PY{n}{cluster\PYZus{}centers}\PY{p}{)}\PY{p}{)}\PY{p}{:}
+              \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Cluster }\PY{l+s+si}{\PYZpc{}d}\PY{l+s+s2}{:}\PY{l+s+s2}{\PYZdq{}} \PY{o}{\PYZpc{}} \PY{n}{i}\PY{p}{)}\PY{p}{,}
+              \PY{k}{for} \PY{n}{ind} \PY{o+ow}{in} \PY{n}{order\PYZus{}centroids}\PY{p}{[}\PY{n}{i}\PY{p}{,} \PY{p}{:}\PY{l+m+mi}{15}\PY{p}{]}\PY{p}{:}
+                  \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{ }\PY{l+s+si}{\PYZpc{}s}\PY{l+s+s1}{\PYZsq{}} \PY{o}{\PYZpc{}} \PY{n}{feat}\PY{p}{[}\PY{n}{ind}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Cluster 0:
+ her
+ she
+ movie
+ you
+ was
+ they
+ when
+ their
+ like
+ about
+ there
+ up
+ so
+ out
+ which
+Cluster 1:
+ movie
+ was
+ you
+ they
+ what
+ just
+ there
+ horror
+ me
+ my
+ like
+ so
+ about
+ or
+ good
+Cluster 2:
+ house
+ tom
+ horror
+ movie
+ you
+ they
+ was
+ what
+ out
+ good
+ just
+ there
+ her
+ up
+ some
+Cluster 3:
+ him
+ life
+ was
+ story
+ more
+ movie
+ which
+ its
+ her
+ we
+ their
+ there
+ when
+ man
+ into
+Cluster 4:
+ jack
+ her
+ ship
+ movie
+ they
+ she
+ him
+ good
+ there
+ you
+ james
+ up
+ more
+ than
+ love
+Cluster 5:
+ you
+ movie
+ your
+ if
+ out
+ about
+ or
+ so
+ her
+ just
+ what
+ there
+ they
+ was
+ when
+Cluster 6:
+ alien
+ ship
+ they
+ movie
+ was
+ which
+ her
+ earth
+ more
+ so
+ its
+ than
+ dr
+ there
+ when
+Cluster 7:
+ they
+ movie
+ there
+ their
+ up
+ joe
+ you
+ out
+ which
+ like
+ comedy
+ funny
+ when
+ can
+ was
+Cluster 8:
+ mr
+ robin
+ which
+ was
+ her
+ no
+ characters
+ there
+ would
+ out
+ while
+ more
+ films
+ character
+ series
+Cluster 9:
+ action
+ movie
+ van
+ you
+ was
+ some
+ like
+ plot
+ so
+ there
+ they
+ good
+ out
+ bad
+ scenes
+Cluster 10:
+ war
+ private
+ men
+ they
+ movie
+ their
+ battle
+ was
+ british
+ american
+ world
+ most
+ mission
+ action
+ about
+Cluster 11:
+ killer
+ you
+ horror
+ murder
+ movie
+ more
+ her
+ was
+ its
+ about
+ what
+ up
+ they
+ too
+ which
+Cluster 12:
+ star
+ effects
+ planet
+ science
+ special
+ fiction
+ movie
+ was
+ space
+ they
+ series
+ so
+ like
+ some
+ we
+Cluster 13:
+ they
+ you
+ we
+ so
+ was
+ about
+ like
+ their
+ there
+ movie
+ what
+ or
+ just
+ up
+ out
+Cluster 14:
+ 10
+ you
+ movie
+ was
+ me
+ also
+ about
+ little
+ some
+ plot
+ my
+ well
+ did
+ see
+ out
+
+    \end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
