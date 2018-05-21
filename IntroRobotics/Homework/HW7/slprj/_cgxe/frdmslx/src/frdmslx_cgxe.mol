@@ -1,0 +1,19 @@
+frdmslx_cgxe.obj
+m_mv8cGpVyckrumJZio0klhD.obj
+m_X0MJCmMFbkIaTP5xyiIxaB.obj
+frdmslx_cgxe_registry.obj
+
+
+
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmx.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmex.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmat.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libfixedpoint.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libut.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmwmathutil.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libemlrt.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmwcgxert.lib" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libmwslexec_simbridge.lib" 
+"-LC:\Program Files\MATLAB\R2017a\bin\win64" "-llibmwipp" 
+"C:\Program Files\MATLAB\R2017a\extern\lib\win64\mingw64\libcovrt.lib"
+
