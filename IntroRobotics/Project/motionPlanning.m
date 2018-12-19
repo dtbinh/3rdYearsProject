@@ -84,21 +84,21 @@ if iscell(Start) && iscell(Goal)
         iterater = T.breadthfirstiterator;
         for node = iterater
             if norm(T.Node{node}-q_goal) == 0
-                for j = T.findpath(1,node);
+                for j = T.findpath(1,node)
                     planning.Path{1}(:,index) = T.Node{j}';
                     index = index+1;
                 end
                 break;
             end
         end
-        display('Done!!!')
+        disp('Done!!!')
     else
-        display('Fail!!!')
+        disp('Fail!!!')
     end
  toc
     Q = planning.Path;
 else
-    display('Input must be a cell array of position([x,y,z]) and orientation([row,pitch,yaw])')
+    disp('Input must be a cell array of position([x,y,z]) and orientation([row,pitch,yaw])')
     Q = NaN;
 end
     
